@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Potive Testing Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.trisysLOS.utilities.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Positive Testing(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Positive"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.trisysLOS.tests.CreateLoanPageTest">
+        <methods>
+          <include name="LOS_TC_CreateLoan_036"/>
+          <include name="LOS_TC_CreateLoan_025"/>
+          <include name="LOS_TC_CreateLoan_015"/>
+          <include name="LOS_TC_CreateLoan_012"/>
+          <include name="LOS_Tc_CreateLoan_006"/>
+          <include name="LOS_TC_CreateLoan_008"/>
+          <include name="tearDown"/>
+          <include name="LOS_TC_CreateLoan_009"/>
+          <include name="LOS_TC_CreateLoan_47"/>
+          <include name="LOS_TC_CreateLoan_021"/>
+          <include name="LOS_TC_CreateLoan_010"/>
+          <include name="LOS_TC_CreationLoan_48"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.trisysLOS.tests.CreateLoanPageTest -->
+    </classes>
+  </test> <!-- Positive Testing(failed) -->
+</suite> <!-- Failed suite [Potive Testing Suite] -->
