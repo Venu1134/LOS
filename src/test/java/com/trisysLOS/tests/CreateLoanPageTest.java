@@ -1,5 +1,7 @@
 package com.trisysLOS.tests;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +17,8 @@ import com.trisysLOS.pageObjects.DashboardPage;
 import com.trisysLOS.pageObjects.LoansListingPage;
 import com.trisysLOS.utilities.JiraCreateIssue;
 import com.trisysLOS.utilities.UtilityClass;
+
+import static com.trisysLOS.utilities.ExtentTestManager.startTest;
 
 public class CreateLoanPageTest extends BaseClass {
 
@@ -45,9 +49,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
-	//Verify if admin is able to create Loan by entering data in all mandatory fields
-	public void LOS_TC_CreateLoan_002() {
+	@Test(groups= {"Regression","Sanity","Positive"}, priority=1,description = "Verify if admin is able to create Loan by entering data in all mandatory fields")
+	public void LOS_TC_CreateLoan_002(Method method) {
+		startTest(method.getName(),"Verify if admin is able to create Loan by entering data in all mandatory fields.");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -61,9 +65,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"}, priority=3)
-	//Verify if admin is able to create Loan by without entering data in mandatory fields
-	public void LOS_TC_CreateLoan_003() {
+	@Test(groups= {"Regression","Negative"}, priority=3, description="Verify if admin is able to create Loan by without entering data in mandatory fields")
+	public void LOS_TC_CreateLoan_003(Method method) {
+		startTest(method.getName(),"Verify if admin is able to create Loan by without entering data in mandatory fields");
 		createLoan.enterName(null);
 		createLoan.enterMobileNumber(null);
 		createLoan.enterEmailID(null);
@@ -77,9 +81,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Positive"},priority=1)
-	//Verify if admin is able to create Loan by entering data in all fields.
-	public void LOS_TC_CreateLoan_004() {
+	@Test(groups= {"Regression","Sanity","Positive"},priority=1,description="Verify if admin is able to create Loan by entering data in all fields.")
+	public void LOS_TC_CreateLoan_004(Method method) {
+		startTest(method.getName(),"Verify if admin is able to create Loan by entering data in all fields.");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -97,57 +101,57 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Negative"},priority=2)
-	//Verify if admin is able to create Loan without entering data in any fields.
-	public void LOS_TC_CreateLoan_005() {
+	@Test(groups= {"Regression","Sanity","Negative"},priority=2,description="Verify if admin is able to create Loan without entering data in any fields.")
+	public void LOS_TC_CreateLoan_005(Method method) {
+		startTest(method.getName(),"Verify if admin is able to create Loan without entering data in any fields.");
 		createLoan.clickOnCreateLoanWithOutDetails();
 		Assert.assertTrue(createLoan.nameFieldRequired());
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify if admin is able to select Product/Loan by dropdown
-	public void LOS_Tc_CreateLoan_006() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify if admin is able to select Product/Loan by dropdown")
+	public void LOS_Tc_CreateLoan_006(Method method) {
+		startTest(method.getName(),"Verify if admin is able to select Product/Loan by dropdown");
 		createLoan.selectProduct(testDataProp.getProperty("Product"));
 		Assert.assertTrue(createLoan.getProductName(testDataProp.getProperty("Product"))); 
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify if admin is able to select individual/corporate by dropdown
-	public void LOS_TC_CreateLoan_007() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify if admin is able to select individual/corporate by dropdown")
+	public void LOS_TC_CreateLoan_007(Method method) {
+		startTest(method.getName(),"Verify if admin is able to select individual/corporate by dropdown");
 		createLoan.selectIndividual(testDataProp.getProperty("Individual"));
 		Assert.assertTrue(createLoan.getIndividualText(testDataProp.getProperty("Individual")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"}, priority=1)
-	//Verify if admin is able to select  priority by dropdown
-	public void LOS_TC_CreateLoan_008() {
+	@Test(groups= {"Regression","Positive"}, priority=1,description="Verify if admin is able to select  priority by dropdown")
+	public void LOS_TC_CreateLoan_008(Method method) {
+		startTest(method.getName(),"Verify if admin is able to select  priority by dropdown");
 		createLoan.selectPriority(testDataProp.getProperty("Priority"));
 		Assert.assertTrue(createLoan.getPriorityText(testDataProp.getProperty("Priority")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify if admin is able to select owner
-	public void LOS_TC_CreateLoan_009() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify if admin is able to select owner")
+	public void LOS_TC_CreateLoan_009(Method method) {
+		startTest(method.getName(),"Verify if admin is able to select owner");
 		createLoan.selectOwner(testDataProp.getProperty("Owner"));
 		Assert.assertTrue(createLoan.getOwnerName(testDataProp.getProperty("Owner")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify if admin is able to select Branch
-	public void LOS_TC_CreateLoan_010() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify if admin is able to select Branch")
+	public void LOS_TC_CreateLoan_010(Method method) {
+		startTest(method.getName(),"Verify if admin is able to select Branch");
 		createLoan.selectBranch(testDataProp.getProperty("Branch"));
 		Assert.assertTrue(createLoan.getBranchName(testDataProp.getProperty("Branch")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify if admin is able to enter the  Need by date manually 
-	public void LOS_TC_CreateLoan_012() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify if admin is able to enter the  Need by date manually")
+	public void LOS_TC_CreateLoan_012(Method method) {
+		startTest(method.getName(),"Verify if admin is able to enter the  Need by date manually");
 		createLoan.enterDate(testDataProp.getProperty("Date"));
 		try {
 			Thread.sleep(1000);
@@ -158,18 +162,18 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify admin is not able to select Past date
-	public void LOS_TC_CreateLoan_015() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify admin is not able to select Past date")
+	public void LOS_TC_CreateLoan_015(Method method) {
+		startTest(method.getName(),"Verify admin is not able to select Past date");
 		createLoan.enterDate(testDataProp.getProperty("PastDate"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validdateDateErrorMessage(testDataProp.getProperty("PastDateActualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify Name component is accepting only  Alphabets and space 
-	public void LOS_TC_CreateLoan_016() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify Name component is accepting only  Alphabets and space") 
+	public void LOS_TC_CreateLoan_016(Method method) {
+		startTest(method.getName(),"Verify Name component is accepting only  Alphabets and space");
 		createLoan.enterName(testDataProp.getProperty("NameAlphaSpace"));
 		createLoan.clickOnCreateLoanButton();
 		try {
@@ -182,45 +186,45 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify Name component is accepting numbers
-	public void LOS_TC_CreateLoan_017() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify Name component is accepting numbers")
+	public void LOS_TC_CreateLoan_017(Method method) {
+		startTest(method.getName(),"Verify Name component is accepting numbers");
 		createLoan.enterName(testDataProp.getProperty("NameNumbers"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify Name component is accepting  special characters
-	public void LOS_TC_CreateLoan_018() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify Name component is accepting  special characters")
+	public void LOS_TC_CreateLoan_018(Method method) {
+		startTest(method.getName(),"Verify Name component is accepting  special characters");
 		createLoan.enterName(testDataProp.getProperty("SpecialCharacters"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify Name component is not accepting alphanumeric characters
-	public void LOS_TC_CreateLoan_019() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify Name component is not accepting alphanumeric characters")
+	public void LOS_TC_CreateLoan_019(Method method) {
+		startTest(method.getName(),"Verify Name component is not accepting alphanumeric characters");
 		createLoan.enterName(testDataProp.getProperty("NameNumberSpecialCharacters"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify name component is accepting combination of alphanumeric and special characters
-	public void LOS_TC_CreateLoan_020() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify name component is accepting combination of alphanumeric and special characters")
+	public void LOS_TC_CreateLoan_020(Method method) {
+		startTest(method.getName(),"Verify name component is accepting combination of alphanumeric and special characters");
 		createLoan.enterName(testDataProp.getProperty("NameAlphaNumberSpecialCharacters"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=3)
-	//Verify Name component is accepting only  Alphabets 
-	public void LOS_TC_CreateLoan_021() {
+	@Test(groups= {"Regression","Positive"},priority=3,description="Verify Name component is accepting only  Alphabets ")
+	public void LOS_TC_CreateLoan_021(Method method) {
+		startTest(method.getName(),"Verify Name component is accepting only  Alphabets");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.clickOnCreateLoanButton();
 		try {
@@ -232,18 +236,18 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify Name component is accepting only spaces
-	public void LOS_TC_CreateLoan_022() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify Name component is accepting only spaces")
+	public void LOS_TC_CreateLoan_022(Method method) {
+		startTest(method.getName(),"Verify Name component is accepting only spaces");
 		createLoan.enterName(testDataProp.getProperty("NameSpaces"));
 		createLoan.clickOnCreateLoanButton();
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify mobile number component is accepting only numbers
-	public void LOS_TC_CreateLoan_023() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify mobile number component is accepting only numbers")
+	public void LOS_TC_CreateLoan_023(Method method) {
+		startTest(method.getName(),"Verify mobile number component is accepting only numbers");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.clickOnCreateLoanButton();
@@ -251,9 +255,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify mobile number component is accepting less than 10 digit  numbers 
-	public void LOS_TC_CreateLoan_024() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify mobile number component is accepting less than 10 digit  numbers ")
+	public void LOS_TC_CreateLoan_024(Method method) {
+		startTest(method.getName(),"Verify mobile number component is accepting less than 10 digit  numbers ");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("NineDigitMobileNumber"));
 		createLoan.clickOnCreateLoanButton();
@@ -261,9 +265,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=2)
-	//Verify mobile number component is accepting maximum 12 digit  numbers 
-	public void LOS_TC_CreateLoan_025() {
+	@Test(groups= {"Regression","Positive"},priority=2,description="Verify mobile number component is accepting maximum 12 digit  numbers") 
+	public void LOS_TC_CreateLoan_025(Method method) {
+		startTest(method.getName(),"Verify mobile number component is accepting maximum 12 digit  numbers");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("TwelveDigitMobileNumber"));
 		createLoan.clickOnCreateLoanButton();
@@ -271,9 +275,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify mobile number text field is accepting alphabets
-	public void LOS_TC_CreateLoan_026() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify mobile number text field is accepting alphabets")
+	public void LOS_TC_CreateLoan_026(Method method) {
+		startTest(method.getName(),"Verify mobile number text field is accepting alphabets");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("Name"));
 		createLoan.clickOnCreateLoanButton();
@@ -281,9 +285,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify mobile number text field is accepting special characters
-	public void LOS_TC_CreateLoan_027() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify mobile number text field is accepting special characters")
+	public void LOS_TC_CreateLoan_027(Method method) {
+		startTest(method.getName(),"Verify mobile number text field is accepting special characters");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("SpecialCharacters"));
 		createLoan.clickOnCreateLoanButton();
@@ -291,9 +295,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify mobile number text field is accepting  alphanumeric special characters
-	public void LOS_TC_CreateLoan_028() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify mobile number text field is accepting  alphanumeric special characters")
+	public void LOS_TC_CreateLoan_028(Method method) {
+		startTest(method.getName(),"Verify mobile number text field is accepting  alphanumeric special characters");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("NameAlphaNumberSpecialCharacters"));
 		createLoan.clickOnCreateLoanButton();
@@ -301,9 +305,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify it is able to create loan without entering mobile number
-	public void LOS_TC_CreateLoan_29() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify it is able to create loan without entering mobile number")
+	public void LOS_TC_CreateLoan_29(Method method) {
+		startTest(method.getName(),"Verify it is able to create loan without entering mobile number");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
 		createLoan.selectIndividual(testDataProp.getProperty("Individual"));
@@ -318,9 +322,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify email component is accepting only valid email format(which should include "@" in it)
-	public void LOS_TC_CreateLoan_030() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify email component is accepting only valid email format(which should include \"@\" in it)")
+	public void LOS_TC_CreateLoan_030(Method method) {
+		startTest(method.getName(),"Verify email component is accepting only valid email format(which should include \"@\" in it)");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Name"));
@@ -329,9 +333,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify whether the email address has the dot (.) or not.
-	public void LOS_TC_CreateLoan_031() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify whether the email address has the dot (.) or not.")
+	public void LOS_TC_CreateLoan_031(Method method) {
+		startTest(method.getName(),"Verify whether the email address has the dot (.) or not.");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -340,9 +344,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=3)
-	//Verify amount component is accepting only numbers
-	public void LOS_TC_CreateLoan_036() {
+	@Test(groups= {"Regression","Positive"},priority=3,description="Verify amount component is accepting only numbers")
+	public void LOS_TC_CreateLoan_036(Method method) {
+		startTest(method.getName(),"Verify amount component is accepting only numbers");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -354,9 +358,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify admin is not able to enter amount in words
-	public void LOS_TC_CreateLoan_037() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify admin is not able to enter amount in words")
+	public void LOS_TC_CreateLoan_037(Method method) {
+		startTest(method.getName(),"Verify admin is not able to enter amount in words");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -368,9 +372,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify amount field is accepting special characters
-	public void LOS_TC_CreateLoan_038() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify amount field is accepting special characters")
+	public void LOS_TC_CreateLoan_038(Method method) {
+		startTest(method.getName(),"Verify amount field is accepting special characters");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -382,9 +386,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=3)
-	//Verify amount field is accepting alphanumeric special characters
-	public void LOS_TC_CreateLoan_039() {
+	@Test(groups= {"Regression","Negative"},priority=3,description="Verify amount field is accepting alphanumeric special characters")
+	public void LOS_TC_CreateLoan_039(Method method) {
+		startTest(method.getName(),"Verify amount field is accepting alphanumeric special characters");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -396,9 +400,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify amount field is accepting negative amount
-	public void LOS_TC_CreateLoan_040() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify amount field is accepting negative amount")
+	public void LOS_TC_CreateLoan_040(Method method) {
+		startTest(method.getName(),"Verify amount field is accepting negative amount");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -410,9 +414,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify amount field is accepting amount in decimal
-	public void LOS_TC_CreateLoan_041() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify amount field is accepting amount in decimal")
+	public void LOS_TC_CreateLoan_041(Method method) {
+		startTest(method.getName(),"Verify amount field is accepting amount in decimal");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -424,9 +428,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify amount field is accept amount as zero
-	public void LOS_TC_CreateLoan_042() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify amount field is accept amount as zero")
+	public void LOS_TC_CreateLoan_042(Method method) {
+		startTest(method.getName(),"Verify amount field is accept amount as zero");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -438,9 +442,9 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2)
-	//Verify admin is able to create loan without entering description
-	public void LOS_TC_CreateLoan_046() {
+	@Test(groups= {"Regression","Negative"},priority=2,description="Verify admin is able to create loan without entering description")
+	public void LOS_TC_CreateLoan_046(Method method) {
+		startTest(method.getName(),"Verify admin is able to create loan without entering description");
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -454,18 +458,19 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"},priority=1)
-	//Verify when clicked on cancel button, its redirecting to loan listing page
-	public void LOS_TC_CreateLoan_47() {
+	@Test(groups= {"Regression","Positive"},priority=1,description="Verify when clicked on cancel button, its redirecting to loan listing page")
+	public void LOS_TC_CreateLoan_47(Method method) {
+		startTest(method.getName(),"Verify when clicked on cancel button, its redirecting to loan listing page");
 		loansListingPage = createLoan.clickOnCancelButton();
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Positive"}, dataProvider = "LoanCreationData",priority=1)
+	@Test(groups= {"Regression","Positive"}, dataProvider = "LoanCreationData",priority=1,description="Verify admin is able to create loans for multiple data")
 	public void LOS_TC_CreationLoan_48(String Name, String MobileNumber, String Email, String Product,
 			String Individual, String IndividualType, String Amount, String NeedByDate,
-			String Priority, String Branch) {
+			String Priority, String Branch,Method method) {
+		startTest(method.getName(),"Verify admin is able to create loans for multiple data");
 		createLoan.enterName(Name);
 		createLoan.enterMobileNumber(MobileNumber);
 		createLoan.enterEmailID(Email);
