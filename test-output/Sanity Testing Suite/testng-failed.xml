@@ -12,18 +12,10 @@
       </run>
     </groups>
     <classes>
-      <class name="com.trisysLOS.tests.AdminLoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="LOS_TC_Login_001"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.trisysLOS.tests.AdminLoginPageTest -->
       <class name="com.trisysLOS.tests.CreateLoanPageTest">
         <methods>
-          <include name="LOS_TC_CreateLoan_004"/>
-          <include name="LOS_TC_CreateLoan_002"/>
-          <include name="LOS_TC_CreateLoan_005"/>
+          <include name="LOS_TC_CreateLoan_004" invocation-numbers="0"/>
+          <include name="LOS_TC_CreateLoan_002" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

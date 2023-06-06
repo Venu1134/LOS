@@ -14,12 +14,18 @@
     <classes>
       <class name="com.trisysLOS.tests.CreateLoanPageTest">
         <methods>
-          <include name="LOS_TC_CreateLoan_003"/>
-          <include name="LOS_TC_CreateLoan_023"/>
-          <include name="LOS_TC_CreateLoan_016"/>
+          <include name="LOS_TC_CreateLoan_003" invocation-numbers="0"/>
+          <include name="LOS_TC_CreateLoan_037"/>
+          <include name="LOS_TC_CreateLoan_023" invocation-numbers="0"/>
+          <include name="LOS_TC_CreateLoan_046" invocation-numbers="0"/>
+          <include name="LOS_TC_CreateLoan_038"/>
+          <include name="LOS_TC_CreateLoan_016" invocation-numbers="0"/>
+          <include name="LOS_TC_CreateLoan_039"/>
+          <include name="LOS_TC_CreateLoan_028"/>
           <include name="tearDown"/>
+          <include name="LOS_TC_CreateLoan_030"/>
           <include name="LOS_TC_CreateLoan_031"/>
-          <include name="LOS_TC_CreateLoan_042"/>
+          <include name="LOS_TC_CreateLoan_042" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trisysLOS.tests.CreateLoanPageTest -->

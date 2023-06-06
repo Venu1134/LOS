@@ -35,11 +35,12 @@ public class MyListeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		WebDriver driver;
+		String desScreenShotPath = null;
 		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			System.out.println("Driver "+driver);
-			String desScreenShotPath = UtilityClass.captureScreenShot(driver, testName);
+			desScreenShotPath = UtilityClass.captureScreenShot(driver, testName);
 			extentTest.addScreenCaptureFromPath(desScreenShotPath);
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 			e.printStackTrace();
@@ -48,10 +49,11 @@ public class MyListeners implements ITestListener {
 		boolean isLogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
 		if(isLogIssue) {
 			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://pj-trisys.atlassian.net/","venu_a@trisysit.com","ATATT3xFfGF0UpZuT8INIIhIlbgtDUZ0cCYEIn5rwgOBLBsGcDgSOqu4DJqGmVaEkQl-4hU-rhlJFIeDmZ7r0L-V2whCoqi9b3054SuPYx-_pdaWaMopmQ-DQi8hU8TJnpRRp9bl5WeAOFL3-_kqu7pG8pO-ibthQLCzKYDY6y-aZINCBr1TRXI=9459256C","LOS");
-			String issueDescription = "Failure Reason from Automation Testing\n\n"+ result.getThrowable().getMessage()+ "\n";
+			String issueDescription = "Failure Reason from Automation Testing\n\n"+ result.getThrowable().getStackTrace() + "\n";
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()+" Failed in Automation Testing";
-			jiraServiceProvider.createJiraIssue("Bug", issueSummary, issueDescription, "Automated Testing");
+			String issueAttachment = result.getInstance().getClass().getName();
+			jiraServiceProvider.createJiraIssue("Bug", issueSummary, issueDescription, "Venu Gopal",issueAttachment);
 		}
 		
 		extentTest.log(Status.INFO, result.getThrowable());

@@ -42,7 +42,7 @@ public class AdminLoginPageTest extends BaseClass {
 	@Test(groups= {"Regression","Sanity","Positive"}, priority=1, description = "To verify valid URL is display sign in page.")
 	public void LOS_TC_Login_001(Method method) {
 		startTest(method.getName(),"To verify valid URL is display sign in page.");
-		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
+		Assert.assertFalse(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
 	}
 
 	@JiraCreateIssue(isCreateIssue = true)

@@ -49,7 +49,7 @@ public class CreateLoanPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Positive"}, priority=1,description = "Verify if admin is able to create Loan by entering data in all mandatory fields")
+	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
 	public void LOS_TC_CreateLoan_002(Method method) {
 		startTest(method.getName(),"Verify if admin is able to create Loan by entering data in all mandatory fields.");
 		createLoan.enterName(testDataProp.getProperty("Name"));
