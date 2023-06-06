@@ -1,7 +1,5 @@
 package com.trisysLOS.tests;
 
-import java.lang.reflect.Method;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -17,8 +15,6 @@ import com.trisysLOS.pageObjects.DashboardPage;
 import com.trisysLOS.pageObjects.LoansListingPage;
 import com.trisysLOS.utilities.JiraCreateIssue;
 import com.trisysLOS.utilities.UtilityClass;
-
-import static com.trisysLOS.utilities.ExtentTestManager.startTest;
 
 public class CreateLoanPageTest extends BaseClass {
 
@@ -50,8 +46,7 @@ public class CreateLoanPageTest extends BaseClass {
 	
 	@JiraCreateIssue(isCreateIssue = true)
 	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
-	public void LOS_TC_CreateLoan_002(Method method) {
-		startTest(method.getName(),"Verify if admin is able to create Loan by entering data in all mandatory fields.");
+	public void LOS_TC_CreateLoan_002() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
 		createLoan.enterMobileNumber(testDataProp.getProperty("MobileNumber"));
 		createLoan.enterEmailID(testDataProp.getProperty("Email"));
@@ -128,7 +123,7 @@ public class CreateLoanPageTest extends BaseClass {
 	
 	@JiraCreateIssue(isCreateIssue = true)
 	@Test(groups= {"Regression","Positive"},priority=1)
-	public void LOS_TC_CreateLoan_009(Method method) {
+	public void LOS_TC_CreateLoan_009() {
 		createLoan.selectOwner(testDataProp.getProperty("Owner"));
 		Assert.assertTrue(createLoan.getOwnerName(testDataProp.getProperty("Owner")));
 	}

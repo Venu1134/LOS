@@ -57,6 +57,7 @@ public class AdminLoginPage {
 	}
 	
 	public boolean getSignInPageURL(String url) {
+		System.out.println("URL : "+ driver.getCurrentUrl());
 		return driver.getCurrentUrl().equals(url);
 	}
 	

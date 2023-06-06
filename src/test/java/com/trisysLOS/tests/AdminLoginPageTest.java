@@ -1,7 +1,5 @@
 package com.trisysLOS.tests;
 
-import java.lang.reflect.Method;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -13,8 +11,6 @@ import com.trisysLOS.baseClass.BaseClass;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.DashboardPage;
 import com.trisysLOS.utilities.JiraCreateIssue;
-
-import static com.trisysLOS.utilities.ExtentTestManager.startTest;
 
 public class AdminLoginPageTest extends BaseClass {
 
