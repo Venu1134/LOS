@@ -39,64 +39,56 @@ public class AdminLoginPageTest extends BaseClass {
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Positive"}, priority=1, description = "To verify valid URL is display sign in page.")
-	public void LOS_TC_Login_001(Method method) {
-		startTest(method.getName(),"To verify valid URL is display sign in page.");
-		Assert.assertFalse(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
+	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
+	public void LOS_TC_Login_001() {
+		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
 	}
 
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Sanity","Positive"},priority=1,description = "To verify user is able to login with valid username and password.")
-	public void LOS_TC_Login_002(Method method) {
-		startTest(method.getName(),"To verify user is able to login with valid username and password.");
+	@Test(groups= {"Regression","Sanity","Positive"},priority=1)
+	public void LOS_TC_Login_002() {
 		dashboardPage = adminLoginPage.EnterValidLoginCredentials(prop.getProperty("UserName"), prop.getProperty("Password"));
 		Assert.assertTrue(dashboardPage.isDashboardHeadingExists());
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2,description = "To verify user is able to login with invalid username and password.")
-	public void LOS_TC_Login_003(Method method) {
-		startTest(method.getName(),"To verify user is able to login with invalid username and password.");
+	@Test(groups= {"Regression","Negative"},priority=2)
+	public void LOS_TC_Login_003() {
 		adminLoginPage.enterInvalidLoginCredentials(testDataProp.getProperty("InvalidUserName"), testDataProp.getProperty("InvalidPassword"));
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"},priority=2,description = "To verify user is able to login with valid username and invalid password.")
-	public void LOS_TC_Login_004(Method method) {
-		startTest(method.getName(),"To verify user is able to login with valid username and invalid password.");
+	@Test(groups= {"Regression","Negative"},priority=2)
+	public void LOS_TC_Login_004() {
 		adminLoginPage.enterInvalidLoginCredentials(prop.getProperty("UserName"), testDataProp.getProperty("InvalidPassword"));
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"}, priority=2,description = "To verify user is able to login with invalid username and valid password.")
-	public void LOS_TC_Login_005(Method method) {
-		startTest(method.getName(),"To verify user is able to login with invalid username and valid password.");
+	@Test(groups= {"Regression","Negative"}, priority=2)
+	public void LOS_TC_Login_005() {
 		adminLoginPage.enterInvalidLoginCredentials(testDataProp.getProperty("InvalidUserName"), prop.getProperty("Password"));
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"}, priority=3,description = "To verify user is able to login with valid username and without password.")
-	public void LOS_TC_Login_006(Method method) {
-		startTest(method.getName(),"To verify user is able to login with valid username and without password.");
+	@Test(groups= {"Regression","Negative"}, priority=3)
+	public void LOS_TC_Login_006() {
 		adminLoginPage.enterInvalidLoginCredentials(prop.getProperty("UserName"), " ");
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"}, priority=3, description = "To verify user is able to login without username and valid password.")
-	public void LOS_TC_Login_007(Method method) {
-		startTest(method.getName(),"To verify user is able to login without username and valid password.");
+	@Test(groups= {"Regression","Negative"}, priority=3)
+	public void LOS_TC_Login_007() {
 		adminLoginPage.enterInvalidLoginCredentials(" ", prop.getProperty("Password"));
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
 	
 	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups= {"Regression","Negative"}, priority=3,description = "To verify user is able to login without entering username and password.")
-	public void LOS_TC_Login_008(Method method) {
-		startTest(method.getName(),"To verify user is able to login without entering username and password.");
+	@Test(groups= {"Regression","Negative"}, priority=3)
+	public void LOS_TC_Login_008() {
 		adminLoginPage.clickOnLoginButton();
 		Assert.assertTrue(adminLoginPage.validateErrorMessage(testDataProp.getProperty("actualErrorMessage")));
 	}
