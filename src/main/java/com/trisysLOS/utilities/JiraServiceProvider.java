@@ -1,7 +1,5 @@
 package com.trisysLOS.utilities;
 
-import com.aventstack.extentreports.ExtentTest;
-
 import net.rcarz.jiraclient.BasicCredentials;
 import net.rcarz.jiraclient.Field;
 import net.rcarz.jiraclient.Issue;
@@ -24,7 +22,7 @@ public class JiraServiceProvider {
 		this.project = project;
 	}
 	
-	public void createJiraIssue(String issueType, String summary, String description, String reporterName, String attachment) {
+	public void createJiraIssue(String issueType, String summary, String description, String reporterName) {
 		
 		try {
 			//Avoid Creating duplicate issue
@@ -37,7 +35,6 @@ public class JiraServiceProvider {
 			FluentCreate fluentCreate = Jira.createIssue(project, issueType);
 			fluentCreate.field(Field.SUMMARY, summary);
 			fluentCreate.field(Field.DESCRIPTION, description);
-			fluentCreate.field(Field.ATTACHMENT, attachment);
 			Issue newIssue = fluentCreate.execute();
 			System.out.println("********************************************");
 			System.out.println("New issue created in Jira with ID: "+newIssue);

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Sanity Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 06 15:34:52 IST 2023</td>
+<td>Started on:</td><td>Tue Jun 06 23:10:24 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39863 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38483 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Sanity </td>
 </tr><tr>
@@ -76,12 +76,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_002()'><b>LOS_TC_CreateLoan_002</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest<br>Parameters: public void com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_002(java.lang.reflect.Method)</td>
+<td title='com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001()'><b>LOS_TC_Login_001</b><br>Test class: com.trisysLOS.tests.AdminLoginPageTest<br>Test method: Verify valid url is displayed in signin page<br>Parameters: public void com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001(AdminLoginPageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace876487258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876487258'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001(AdminLoginPageTest.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.trisysLOS.tests.AdminLoginPageTest@75d4a5c2</td></tr>
+<tr>
+<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_002()'><b>LOS_TC_CreateLoan_002</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest<br>Test method: Verify if admin is able to create Loan by entering data in all mandatory fields.<br>Parameters: public void com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_002(java.lang.reflect.Method)</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
 	at com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_002(CreateLoanPageTest.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace66747889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace66747889'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798823822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798823822'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertTrue(Assert.java:56)
@@ -115,19 +156,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>com.trisysLOS.tests.CreateLoanPageTest@385c9627</td></tr>
+<td>com.trisysLOS.tests.CreateLoanPageTest@7dcf94f8</td></tr>
 <tr>
-<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004()'><b>LOS_TC_CreateLoan_004</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest<br>Test method: Verify if admin is able to create Loan by entering data in all fields.<br>Parameters: public void com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004(java.lang.reflect.Method)</td>
+<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004()'><b>LOS_TC_CreateLoan_004</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004(CreateLoanPageTest.java:100)
+	at com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004(CreateLoanPageTest.java:98)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939354020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1939354020'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1076580225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1076580225'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertTrue(Assert.java:56)
 	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004(CreateLoanPageTest.java:100)
+	at com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_004(CreateLoanPageTest.java:98)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -156,7 +197,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>12</td>
-<td>com.trisysLOS.tests.CreateLoanPageTest@385c9627</td></tr>
+<td>com.trisysLOS.tests.CreateLoanPageTest@7dcf94f8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,20 +208,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001()'><b>LOS_TC_Login_001</b><br>Test class: com.trisysLOS.tests.AdminLoginPageTest<br>Test method: To verify valid URL is display sign in page.<br>Parameters: public void com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_001(java.lang.reflect.Method)</td>
-<td></td>
-<td>0</td>
-<td>com.trisysLOS.tests.AdminLoginPageTest@30c15d8b</td></tr>
-<tr>
-<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_005()'><b>LOS_TC_CreateLoan_005</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest<br>Test method: Verify if admin is able to create Loan without entering data in any fields.<br>Parameters: public void com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_005(java.lang.reflect.Method)</td>
-<td></td>
-<td>0</td>
-<td>com.trisysLOS.tests.CreateLoanPageTest@385c9627</td></tr>
-<tr>
-<td title='com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002()'><b>LOS_TC_Login_002</b><br>Test class: com.trisysLOS.tests.AdminLoginPageTest<br>Test method: To verify user is able to login with valid username and password.<br>Parameters: public void com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002(java.lang.reflect.Method)</td>
+<td title='com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002()'><b>LOS_TC_Login_002</b><br>Test class: com.trisysLOS.tests.AdminLoginPageTest<br>Test method: Verify if User is able to create Lead by entering data in mandatory fields<br>Parameters: public void com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002(java.lang.reflect.Method)</td>
 <td></td>
 <td>1</td>
-<td>com.trisysLOS.tests.AdminLoginPageTest@30c15d8b</td></tr>
+<td>com.trisysLOS.tests.AdminLoginPageTest@75d4a5c2</td></tr>
+<tr>
+<td title='com.trisysLOS.tests.CreateLoanPageTest.LOS_TC_CreateLoan_005()'><b>LOS_TC_CreateLoan_005</b><br>Test class: com.trisysLOS.tests.CreateLoanPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.trisysLOS.tests.CreateLoanPageTest@7dcf94f8</td></tr>
 </table><p>
 </body>
 </html>
