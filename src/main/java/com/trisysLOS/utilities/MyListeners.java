@@ -53,6 +53,7 @@ public class MyListeners implements ITestListener {
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
 			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()+" Failed in Automation Testing";
 			String issueAttachment = result.getInstance().getClass().getName();
+			System.out.println("issueAttachment : "+issueAttachment);
 			jiraServiceProvider.createJiraIssue("Bug", issueSummary, issueDescription, "Venu Gopal",issueAttachment);
 		}
 		
