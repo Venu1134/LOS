@@ -46,15 +46,6 @@ public class MyListeners implements ITestListener {
 			e.printStackTrace();
 		}
 		
-		boolean isLogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
-		if(isLogIssue) {
-			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://pj-trisys.atlassian.net/","venu_a@trisysit.com","ATATT3xFfGF0UpZuT8INIIhIlbgtDUZ0cCYEIn5rwgOBLBsGcDgSOqu4DJqGmVaEkQl-4hU-rhlJFIeDmZ7r0L-V2whCoqi9b3054SuPYx-_pdaWaMopmQ-DQi8hU8TJnpRRp9bl5WeAOFL3-_kqu7pG8pO-ibthQLCzKYDY6y-aZINCBr1TRXI=9459256C","LOS");
-			String issueDescription = "Failure Reason from Automation Testing\n\n"+ result.getThrowable().getStackTrace() + "\n";
-			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
-			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()+" Failed in Automation Testing";
-			jiraServiceProvider.createJiraIssue("Bug", issueSummary, issueDescription, "Venu Gopal");
-		}
-		
 		extentTest.log(Status.INFO, result.getThrowable());
 		extentTest.log(Status.FAIL, testName+" got Failed");
 	}
