@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Date;
 
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -86,7 +88,15 @@ public class UtilityClass {
 	}
 	
 	public static LocalDate getTodaysDate() {
-		LocalDate todaysDate = LocalDate.now();
-		return todaysDate;
+		LocalDate Todaydate = LocalDate.now();
+		return Todaydate;
+	}
+	
+	public static String invaldName() {
+		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyyHHmmss");  
+	    Date date = new Date();
+		String todaysDate = formatter.format(date);
+		String name = "Kamala"+todaysDate;
+		return name;
 	}
 }
