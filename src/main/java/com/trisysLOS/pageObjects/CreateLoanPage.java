@@ -85,6 +85,9 @@ public class CreateLoanPage {
 	@FindBy(xpath="//*[text()='Cancel']")
 	private WebElement cancelButton;
 	
+//	@FindBy(xpath="//*[text()='Error']")
+//	private WebElement duplicateloanerror;
+	
 	public void enterName(String Name) {
 		name.sendKeys(Name);
 	}
@@ -340,5 +343,10 @@ public class CreateLoanPage {
 		clp.clickOnCreateLoanButton(); 
 		return new LoansListingPage(driver);
 	}
+	
+//	public boolean validateDuplicateLoanError(String errMessage) {
+//		System.out.println("error Message : "+name.getAttribute("title"));
+//		return name.getAttribute("title").equals(errMessage);
+//	}
 	
 }

@@ -24,7 +24,7 @@ public class LoansListingPage {
 	@FindBy(xpath="(//*[@placeholder='Search Name or Mobile Number'])[1]")
 	private WebElement searchByNameOrMobileNumber;
 	
-	@FindBy(xpath="//*[@id='dealTable']//td[1]")
+	@FindBy(xpath="//*[@id='dealTable']//td[1]/a")
 	private List<WebElement> NameList;
 	
 	public boolean nameValidateInLoansListing(String Name) {

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T18:10:30 IST" name="Default suite" finished-at="2023-07-10T18:11:13 IST" duration-ms="42921">
+  <suite started-at="2023-07-11T17:53:53 IST" name="Default suite" finished-at="2023-07-11T17:54:28 IST" duration-ms="35111">
     <groups>
     </groups>
-    <test started-at="2023-07-10T18:10:30 IST" name="Default test" finished-at="2023-07-10T18:11:13 IST" duration-ms="42921">
+    <test started-at="2023-07-11T17:53:53 IST" name="Default test" finished-at="2023-07-11T17:54:28 IST" duration-ms="35111">
       <class name="com.trisysLOS.tests.LoansListingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@273e7444]" started-at="2023-07-10T18:10:30 IST" name="setUp" finished-at="2023-07-10T18:10:39 IST" duration-ms="8722" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@783a467b]" started-at="2023-07-11T17:53:53 IST" name="setUp" finished-at="2023-07-11T17:54:01 IST" duration-ms="7330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@273e7444]" started-at="2023-07-10T18:10:39 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-10T18:11:13 IST" duration-ms="33873" status="PASS">
+        <test-method signature="LOS_TC_LoansListing_006()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@783a467b]" started-at="2023-07-11T17:54:01 IST" name="LOS_TC_LoansListing_006" finished-at="2023-07-11T17:54:28 IST" duration-ms="27242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LOS_TC_LoansListing_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@273e7444]" started-at="2023-07-10T18:11:13 IST" name="tearDown" finished-at="2023-07-10T18:11:13 IST" duration-ms="263" status="PASS">
+        </test-method> <!-- LOS_TC_LoansListing_006 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@783a467b]" started-at="2023-07-11T17:54:28 IST" name="tearDown" finished-at="2023-07-11T17:54:28 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

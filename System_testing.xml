@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="System Testing Suite">
+	<listeners>
+		<listener class-name="com.trisysLOS.utilities.MyListeners">
+		</listener>
+	</listeners>
+	<test name="System Testing">
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="System"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.trisysLOS.tests.AdminLoginPageTest" />
+			<class name="com.trisysLOS.tests.CreateLoanPageTest" />
+		    <class name="com.trisysLOS.tests.LoansListingPageTest" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

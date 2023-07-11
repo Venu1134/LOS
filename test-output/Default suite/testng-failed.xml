@@ -6,8 +6,8 @@
       <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="LOS_TC_LoansListing_004"/>
           <include name="setUp"/>
+          <include name="LOS_TC_LoansListing_003"/>
         </methods>
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
     </classes>

@@ -3,6 +3,7 @@ package com.trisysLOS.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,6 +11,7 @@ import com.trisysLOS.baseClass.BaseClass;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.CreateLoanPage;
 import com.trisysLOS.pageObjects.DashboardPage;
+import com.trisysLOS.pageObjects.LoanDeletePage;
 import com.trisysLOS.pageObjects.LoansDeatilsPage;
 import com.trisysLOS.pageObjects.LoansListingPage;
 import com.trisysLOS.utilities.UtilityClass;
@@ -26,6 +28,7 @@ public class LoansListingPageTest extends BaseClass {
 	public LoansListingPage loansListingPage;
 	public LoansDeatilsPage loansDetailsPage;
 	public CreateLoanPage createLoanPage;
+	public LoanDeletePage loanDeletePage;
 	
 
 	@BeforeMethod
@@ -39,6 +42,7 @@ public class LoansListingPageTest extends BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+	
 	
 	@Test
 	//Validate whether the user is able to navigate loan tab
@@ -62,18 +66,43 @@ public class LoansListingPageTest extends BaseClass {
 	}
 	
 	//Validate whether the loan created is displayed in Loan listing page
-	@Test
+	@Test(groups= {"System"})
 	public void LOS_TC_LoansListing_004() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
 		createLoanPage = loansListingPage.clickOnNewLoanButton();
-		String name = UtilityClass.invaldName();
-		System.out.println("Invalid name : "+name);
-		loansListingPage = createLoanPage.enterAllDetails(name, testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"), testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"), testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"), testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"), testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"), testDataProp.getProperty("Branch"));
-	    loansListingPage.nameValidateInLoansListing(name);
-	    loansListingPage.clickOnCreatedLoan(name);
+		loansListingPage = createLoanPage.enterAllDetails(testDataProp.getProperty("Name"), testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"), testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"), testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"), testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"), testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"), testDataProp.getProperty("Branch"));
+		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("SearchName"));
+		loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName"));
+	    loansListingPage.clickOnCreatedLoan(testDataProp.getProperty("SearchName"));
+	    Assert.assertTrue(loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName")));
 	}
 	
 	// Validate that user is unable to create duplicate loans
+	@Test(groups= {"System"})
+	public void LOS_TC_LoansListing_005() {
+        loansListingPage = dashboardPage.clickOnLoansLodule();
+		createLoanPage = loansListingPage.clickOnNewLoanButton();
+		loansListingPage = createLoanPage.enterAllDetails(testDataProp.getProperty("Name"), testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"), testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"), testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"), testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"), testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"), testDataProp.getProperty("Branch"));
+		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("SearchName"));
+        loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName"));
+		createLoanPage = loansListingPage.clickOnNewLoanButton();
+		loansListingPage = createLoanPage.enterAllDetails(testDataProp.getProperty("Name"), testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"), testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"), testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"), testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"), testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"), testDataProp.getProperty("Branch"));
+        Assert.assertTrue(createLoanPage.validateNameErrorMessage(testDataProp.getProperty("DuplicateErrorMessage")));
+	}
 	
-	
+	//Validate that user is able to delete the created loan and verify that loan is not displayed in loan listing page
+	@Test(groups= {"System"})
+	public void LOS_TC_LoansListing_006() {
+        loansListingPage = dashboardPage.clickOnLoansLodule();
+		createLoanPage = loansListingPage.clickOnNewLoanButton();
+		loansListingPage = createLoanPage.enterAllDetails(testDataProp.getProperty("Name"), testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"), testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"), testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"), testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"), testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"), testDataProp.getProperty("Branch"));
+	    loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("Name"));
+		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("SearchName"));
+	    loansDetailsPage = loansListingPage.clickOnCreatedLoan(testDataProp.getProperty("SearchName"));
+	    loanDeletePage = loansDetailsPage.clickOnDeleteButton();
+	    loanDeletePage.clickOnYesButton();
+	    loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("Name"));
+        Assert.assertFalse(loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("Name")));
+	    
+	}
 }
