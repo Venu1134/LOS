@@ -322,4 +322,23 @@ public class CreateLoanPage {
 		System.out.println("Product Name : "+productName.getText());
 		return productName.getText().contains(ProductName);
 	}
+	
+	public LoansListingPage enterAllDetails(String Name, String MobNumber, String Email,String Product, String Individual,String IndividualTypes , String Amounts ,String Date , String Priority , String Description , String Owner , String Branch) {
+		CreateLoanPage clp = new CreateLoanPage(driver);
+		clp.enterName(Name);
+		clp.enterMobileNumber(MobNumber);
+		clp.enterEmailID(Email);
+		clp.selectProduct(Product);
+		clp.selectIndividual(Individual);
+		clp.selectIndividualType(IndividualTypes);
+		clp.enterAmount(Amounts);
+		clp.enterDate(Date);
+		clp.selectPriority(Priority);
+		clp.enterDescription(Description);
+		clp.selectOwner(Owner);
+		clp.selectBranch(Branch);	
+		clp.clickOnCreateLoanButton(); 
+		return new LoansListingPage(driver);
+	}
+	
 }

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Sanity Testing Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.trisysLOS.utilities.MyListeners"/>
   </listeners>
-  <test thread-count="5" name="Sanity Testing(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="Sanity"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.trisysLOS.tests.CreateLoanPageTest">
+      <class name="com.trisysLOS.tests.AdminLoginPageTest">
         <methods>
-          <include name="LOS_TC_CreateLoan_004"/>
-          <include name="LOS_TC_CreateLoan_002"/>
+          <include name="LOS_TC_Login_008"/>
+          <include name="LOS_TC_Login_004"/>
           <include name="tearDown"/>
+          <include name="LOS_TC_Login_007"/>
+          <include name="LOS_TC_Login_005"/>
+          <include name="LOS_TC_Login_003"/>
+          <include name="LOS_TC_Login_006"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.trisysLOS.tests.CreateLoanPageTest -->
+      </class> <!-- com.trisysLOS.tests.AdminLoginPageTest -->
     </classes>
-  </test> <!-- Sanity Testing(failed) -->
-</suite> <!-- Failed suite [Sanity Testing Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

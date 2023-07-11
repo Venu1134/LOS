@@ -7,12 +7,12 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
-		<groups>
+	<!--	<groups>
 		<define name=""></define>
 			<run>
 				<include name="Sanity"></include>
 			</run>
-		</groups>
+		</groups> -->
 		<classes>
 			<!-- <class name="com.trisysLOS.tests.LoansDetailsPageTest" /> <class 
 				name="com.trisysLOS.tests.LoanDeletePageTest" /> <class name="com.trisysLOS.tests.LoansListingPageTest" 
