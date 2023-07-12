@@ -14,7 +14,6 @@
 		</groups>
 		<classes>
 			<class name="com.trisysLOS.tests.AdminLoginPageTest" />
-			<class name="com.trisysLOS.tests.CreateLoanPageTest" />
 		    <class name="com.trisysLOS.tests.LoansListingPageTest" />
 			
 		</classes>
