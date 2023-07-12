@@ -13,7 +13,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.trisysLOS.jiraIntegration.JiraPolicy;
+import com.trisysLOS.jiraIntegration.JiraCreateIssue;
 import com.trisysLOS.jiraIntegration.JiraServiceProvider;
 
 public class MyListeners implements ITestListener {
@@ -48,18 +48,14 @@ public class MyListeners implements ITestListener {
 			e.printStackTrace();
 		}
 		
-		JiraPolicy jiraPolicy = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraPolicy.class);
-		boolean isTicketReady = jiraPolicy.logTicket();
-		if(isTicketReady) {
-			//raise jira ticket
-			System.out.println("is ticket ready for Jira : "+isTicketReady);
-			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://pj-trisys.atlassian.net","venu_a@trisysit.com",
-					"ATATT3xFfGF0zJuOOkXpS0HDLtkOpnE4r1_gLUG9uJ0mtevjctf_mMYeHaL8ZmbBxHgHJLkRC6LZc8q8vJjgsg2_CsqS9joqGoua5NHNqufKwXySF_0V_Lq44FZwCPqGDC7Yb0blLK1FhHy8_U0GP-EOPudK5_VFs-v3lRypYjFSpzWWSIQCLEc=775C2A85","LOS");
-			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName() +" got failed due to some assertion or exception";
-			String issueDescription = result.getThrowable().getMessage()+"\n";
-			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
+		boolean islogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
+		if(islogIssue){
+			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://venu1134.atlassian.net","venugopal281999@gmail.com","ATATT3xFfGF0z07QHcjkSSYtatR88IozR8ItfOJ7fx9BlJKIKaMdriHwUbzI_FfVhJmHNrcfeJSh1GKLWrd71bBUvPjMqum1TeJWyGFyziTZk4ZD2yV1j2vpIorgjiI0qq8dqcdIX8ZLYA8WWSlJs-KxgGGSbRkpBMbnqYCaXBJDA2Zjq8QXdaM=441E28AD","LOS");
 			
-			jiraServiceProvider.createJiraTicket("Bug", issueSummary, issueDescription, "Venu Gopal A");
+			String issueDescription = "Failure Reason from Automation Testing\n\n"+ result.getThrowable().getMessage()+"\n";
+			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));
+			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()+" falied Testcase";
+			jiraServiceProvider.createJiraIssue("Bug",issueSummary,issueDescription,"Automated Testing");
 		}
 		
 		extentTest.log(Status.INFO, result.getThrowable());
