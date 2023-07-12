@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.trisysLOS.baseClass.BaseClass;
@@ -13,7 +14,6 @@ import com.trisysLOS.pageObjects.DashboardPage;
 import com.trisysLOS.pageObjects.LoanDeletePage;
 import com.trisysLOS.pageObjects.LoansDeatilsPage;
 import com.trisysLOS.pageObjects.LoansListingPage;
-import com.trisysLOS.utilities.UtilityClass;
 
 public class LoansListingPageTest extends BaseClass {
 
@@ -30,14 +30,15 @@ public class LoansListingPageTest extends BaseClass {
 	public LoanDeletePage loanDeletePage;
 	
 
-	@BeforeMethod
-	public void setUp() {
-		driver = initilizeBrowser(prop.getProperty("BrowserName"));
+	@Parameters("browser")
+	@BeforeMethod(groups = {"System"})
+	public void setUp(String browser) {
+		driver = initilizeBrowser(browser);
 		adminLoginPage = new AdminLoginPage(driver);
 		dashboardPage = adminLoginPage.EnterValidLoginCredentials(prop.getProperty("UserName"), prop.getProperty("Password"));
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = {"System"})
 	public void tearDown() {
 		driver.quit();
 	}

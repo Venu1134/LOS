@@ -3,20 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trisysLOS.tests.AdminLoginPageTest">
+      <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
-          <include name="LOS_TC_Login_008"/>
           <include name="tearDown"/>
-          <include name="LOS_TC_Login_004"/>
-          <include name="LOS_TC_Login_007"/>
-          <include name="LOS_TC_Login_005"/>
-          <include name="LOS_TC_Login_003"/>
-          <include name="LOS_TC_Login_006"/>
+          <include name="LOS_TC_LoansListing_004"/>
           <include name="setUp"/>
-          <include name="LOS_TC_Login_001"/>
-          <include name="LOS_TC_Login_002"/>
         </methods>
-      </class> <!-- com.trisysLOS.tests.AdminLoginPageTest -->
+      </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
