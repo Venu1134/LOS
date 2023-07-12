@@ -5,7 +5,7 @@
 		<listener class-name="com.trisysLOS.utilities.MyListeners">
 		</listener>
 	</listeners>
-	<test name="System Testing">
+	<test thread-count="5" name="System Testing">
 		<parameter name="browser" value="chrome"></parameter>
 		<groups>
 			<run>
@@ -13,9 +13,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.trisysLOS.tests.AdminLoginPageTest" />
-		    <class name="com.trisysLOS.tests.LoansListingPageTest" />
-			
+			<class name="com.trisysLOS.tests.LoansListingPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
