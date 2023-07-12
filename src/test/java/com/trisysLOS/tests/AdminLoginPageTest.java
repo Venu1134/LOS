@@ -27,6 +27,7 @@ public class AdminLoginPageTest extends BaseClass {
 	@BeforeMethod(groups= {"Regression","Sanity","Negative","Positive"}, alwaysRun = true)
 	public void setUp(String browser) {
 		driver = initilizeBrowser(browser);
+		System.out.println(driver + "driver");
 		adminLoginPage = new AdminLoginPage(driver);
 	}
 
