@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.trisysLOS.baseClass.BaseClass;
+import com.trisysLOS.jiraIntegration.JiraCreateIssue;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.DashboardPage;
 import com.trisysLOS.pageObjects.EditLoanPage;
@@ -39,6 +40,7 @@ public class EditLoanPageTest extends BaseClass {
 		driver.quit();
 	}
 	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test
 	public void LOS_TC_EditLoan_001() {
 		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("SearchName"));
