@@ -1,101 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
+<testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T10:49:56 IST" name="Suite" finished-at="2023-07-12T10:52:03 IST" duration-ms="127050">
+  <suite started-at="2023-07-12T14:44:27 IST" name="Default suite" finished-at="2023-07-12T14:45:26 IST" duration-ms="58656">
     <groups>
-      <group name="Sanity">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-      </group> <!-- Sanity -->
-      <group name="Negative">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-      </group> <!-- Negative -->
-      <group name="Positive">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-      </group> <!-- Positive -->
-      <group name="Regression">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-      </group> <!-- Regression -->
+      <group name="System">
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" name="LOS_TC_LoansListing_005" class="com.trisysLOS.tests.LoansListingPageTest"/>
+      </group> <!-- System -->
     </groups>
-    <test started-at="2023-07-12T10:49:56 IST" name="Test" finished-at="2023-07-12T10:52:03 IST" duration-ms="127050">
-      <class name="com.trisysLOS.tests.AdminLoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:49:57 IST" name="setUp" finished-at="2023-07-12T10:50:11 IST" duration-ms="14089" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-07-12T14:44:27 IST" name="Default test" finished-at="2023-07-12T14:45:26 IST" duration-ms="58656">
+      <class name="com.trisysLOS.tests.LoansListingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:44:27 IST" name="setUp" finished-at="2023-07-12T14:44:44 IST" duration-ms="17356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:11 IST" name="LOS_TC_Login_001" finished-at="2023-07-12T10:50:11 IST" duration-ms="56" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:11 IST" name="tearDown" finished-at="2023-07-12T10:50:12 IST" duration-ms="805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:12 IST" name="setUp" finished-at="2023-07-12T10:50:18 IST" duration-ms="6777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:18 IST" name="LOS_TC_Login_002" finished-at="2023-07-12T10:50:25 IST" duration-ms="6996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:25 IST" name="tearDown" finished-at="2023-07-12T10:50:26 IST" duration-ms="721" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:26 IST" name="setUp" finished-at="2023-07-12T10:50:33 IST" duration-ms="6714" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:33 IST" name="LOS_TC_Login_003" finished-at="2023-07-12T10:50:39 IST" duration-ms="5830" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:44:44 IST" name="LOS_TC_LoansListing_005" finished-at="2023-07-12T14:45:25 IST" duration-ms="40898" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74d145360d6a38c6d464cebf10faff7e, findElement {using=id, value=dealName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:5079/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74d145360d6a38c6d464cebf10faff7e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_003(AdminLoginPageTest.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74d145360d6a38c6d464cebf10faff7e, findElement {using=id, value=dealName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:5079/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74d145360d6a38c6d464cebf10faff7e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getAttribute(Unknown Source)
+at com.trisysLOS.pageObjects.CreateLoanPage.validateNameErrorMessage(CreateLoanPage.java:98)
+at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_005(LoansListingPageTest.java:88)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -122,310 +84,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LOS_TC_Login_003 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:43 IST" name="tearDown" finished-at="2023-07-12T10:50:44 IST" duration-ms="757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:44 IST" name="setUp" finished-at="2023-07-12T10:50:51 IST" duration-ms="6888" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:51 IST" name="LOS_TC_Login_004" finished-at="2023-07-12T10:50:57 IST" duration-ms="6160" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_004(AdminLoginPageTest.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:00 IST" name="tearDown" finished-at="2023-07-12T10:51:01 IST" duration-ms="592" status="PASS">
+        </test-method> <!-- LOS_TC_LoansListing_005 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:45:25 IST" name="tearDown" finished-at="2023-07-12T14:45:25 IST" duration-ms="345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:01 IST" name="setUp" finished-at="2023-07-12T10:51:08 IST" duration-ms="7531" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:08 IST" name="LOS_TC_Login_005" finished-at="2023-07-12T10:51:13 IST" duration-ms="4527" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_005(AdminLoginPageTest.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_005 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:16 IST" name="tearDown" finished-at="2023-07-12T10:51:17 IST" duration-ms="883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:17 IST" name="setUp" finished-at="2023-07-12T10:51:24 IST" duration-ms="6823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:24 IST" name="LOS_TC_Login_006" finished-at="2023-07-12T10:51:29 IST" duration-ms="5036" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_006(AdminLoginPageTest.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:32 IST" name="tearDown" finished-at="2023-07-12T10:51:33 IST" duration-ms="631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:33 IST" name="setUp" finished-at="2023-07-12T10:51:39 IST" duration-ms="6077" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:39 IST" name="LOS_TC_Login_007" finished-at="2023-07-12T10:51:44 IST" duration-ms="5600" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_007(AdminLoginPageTest.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_007 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:48 IST" name="tearDown" finished-at="2023-07-12T10:51:49 IST" duration-ms="598" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:49 IST" name="setUp" finished-at="2023-07-12T10:51:55 IST" duration-ms="6000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:55 IST" name="LOS_TC_Login_008" finished-at="2023-07-12T10:51:59 IST" duration-ms="4168" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_008(AdminLoginPageTest.java:91)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LOS_TC_Login_008 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:52:02 IST" name="tearDown" finished-at="2023-07-12T10:52:03 IST" duration-ms="568" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.trisysLOS.tests.AdminLoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

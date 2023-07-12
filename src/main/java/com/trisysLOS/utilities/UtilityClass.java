@@ -31,6 +31,7 @@ public class UtilityClass {
 	public static final int VehicleInTimeMinute = 1;
 	
 	public static String captureScreenShot(WebDriver driver, String testName) {
+		
 		File srcScreenShotPath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String desScreenShotPath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
 		try {
