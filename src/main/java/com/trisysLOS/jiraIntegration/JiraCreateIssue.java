@@ -1,9 +1,14 @@
 package com.trisysLOS.jiraIntegration;
 
-import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
+import java.lang.annotation.Retention;
+
 @Retention(RetentionPolicy.RUNTIME)
-public @interface JiraPolicy {
-	boolean logTicket();
+
+public @interface JiraCreateIssue {
+
+ boolean isCreateIssue();
+
 }
+

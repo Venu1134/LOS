@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T11:01:38 IST" name="Suite" finished-at="2023-07-11T11:02:21 IST" duration-ms="42488">
+  <suite started-at="2023-07-12T10:49:56 IST" name="Suite" finished-at="2023-07-12T10:52:03 IST" duration-ms="127050">
     <groups>
       <group name="Sanity">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Sanity -->
       <group name="Negative">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Negative -->
       <group name="Positive">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Positive -->
       <group name="Regression">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_001" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_003" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_004" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_005" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_006" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_007" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" name="LOS_TC_Login_008" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-07-11T11:01:38 IST" name="Test" finished-at="2023-07-11T11:02:21 IST" duration-ms="42488">
+    <test started-at="2023-07-12T10:49:56 IST" name="Test" finished-at="2023-07-12T10:52:03 IST" duration-ms="127050">
       <class name="com.trisysLOS.tests.AdminLoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:39 IST" name="setUp" finished-at="2023-07-11T11:01:44 IST" duration-ms="5017" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:49:57 IST" name="setUp" finished-at="2023-07-12T10:50:11 IST" duration-ms="14089" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,15 +44,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:44 IST" name="LOS_TC_Login_001" finished-at="2023-07-11T11:01:44 IST" duration-ms="47" status="PASS">
+        <test-method signature="LOS_TC_Login_001()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:11 IST" name="LOS_TC_Login_001" finished-at="2023-07-12T10:50:11 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:44 IST" name="tearDown" finished-at="2023-07-11T11:01:45 IST" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:11 IST" name="tearDown" finished-at="2023-07-12T10:50:12 IST" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:45 IST" name="setUp" finished-at="2023-07-11T11:01:47 IST" duration-ms="2302" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:12 IST" name="setUp" finished-at="2023-07-12T10:50:18 IST" duration-ms="6777" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,15 +63,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:47 IST" name="LOS_TC_Login_002" finished-at="2023-07-11T11:01:49 IST" duration-ms="1619" status="PASS">
+        <test-method signature="LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:18 IST" name="LOS_TC_Login_002" finished-at="2023-07-12T10:50:25 IST" duration-ms="6996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:49 IST" name="tearDown" finished-at="2023-07-11T11:01:49 IST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:25 IST" name="tearDown" finished-at="2023-07-12T10:50:26 IST" duration-ms="721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:49 IST" name="setUp" finished-at="2023-07-11T11:01:53 IST" duration-ms="3178" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:26 IST" name="setUp" finished-at="2023-07-12T10:50:33 IST" duration-ms="6714" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:53 IST" name="LOS_TC_Login_003" finished-at="2023-07-11T11:01:54 IST" duration-ms="1069" status="FAIL">
+        <test-method signature="LOS_TC_Login_003()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:33 IST" name="LOS_TC_Login_003" finished-at="2023-07-12T10:50:39 IST" duration-ms="5830" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -126,11 +126,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_003 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:56 IST" name="tearDown" finished-at="2023-07-11T11:01:56 IST" duration-ms="831" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:43 IST" name="tearDown" finished-at="2023-07-12T10:50:44 IST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:56 IST" name="setUp" finished-at="2023-07-11T11:01:59 IST" duration-ms="2171" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:44 IST" name="setUp" finished-at="2023-07-12T10:50:51 IST" duration-ms="6888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:01:59 IST" name="LOS_TC_Login_004" finished-at="2023-07-11T11:02:00 IST" duration-ms="1171" status="FAIL">
+        <test-method signature="LOS_TC_Login_004()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:50:51 IST" name="LOS_TC_Login_004" finished-at="2023-07-12T10:50:57 IST" duration-ms="6160" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -185,11 +185,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:01 IST" name="tearDown" finished-at="2023-07-11T11:02:01 IST" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:00 IST" name="tearDown" finished-at="2023-07-12T10:51:01 IST" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:01 IST" name="setUp" finished-at="2023-07-11T11:02:04 IST" duration-ms="2237" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:01 IST" name="setUp" finished-at="2023-07-12T10:51:08 IST" duration-ms="7531" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,7 +200,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:04 IST" name="LOS_TC_Login_005" finished-at="2023-07-11T11:02:05 IST" duration-ms="1033" status="FAIL">
+        <test-method signature="LOS_TC_Login_005()[pri:2, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:08 IST" name="LOS_TC_Login_005" finished-at="2023-07-12T10:51:13 IST" duration-ms="4527" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -244,11 +244,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_005 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:06 IST" name="tearDown" finished-at="2023-07-11T11:02:06 IST" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:16 IST" name="tearDown" finished-at="2023-07-12T10:51:17 IST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:06 IST" name="setUp" finished-at="2023-07-11T11:02:09 IST" duration-ms="2399" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:17 IST" name="setUp" finished-at="2023-07-12T10:51:24 IST" duration-ms="6823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,7 +259,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:09 IST" name="LOS_TC_Login_006" finished-at="2023-07-11T11:02:10 IST" duration-ms="1344" status="FAIL">
+        <test-method signature="LOS_TC_Login_006()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:24 IST" name="LOS_TC_Login_006" finished-at="2023-07-12T10:51:29 IST" duration-ms="5036" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -303,11 +303,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:11 IST" name="tearDown" finished-at="2023-07-11T11:02:12 IST" duration-ms="796" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:32 IST" name="tearDown" finished-at="2023-07-12T10:51:33 IST" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:12 IST" name="setUp" finished-at="2023-07-11T11:02:14 IST" duration-ms="2249" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:33 IST" name="setUp" finished-at="2023-07-12T10:51:39 IST" duration-ms="6077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,7 +318,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:14 IST" name="LOS_TC_Login_007" finished-at="2023-07-11T11:02:15 IST" duration-ms="888" status="FAIL">
+        <test-method signature="LOS_TC_Login_007()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:39 IST" name="LOS_TC_Login_007" finished-at="2023-07-12T10:51:44 IST" duration-ms="5600" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -362,11 +362,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_007 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:16 IST" name="tearDown" finished-at="2023-07-11T11:02:16 IST" duration-ms="616" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:48 IST" name="tearDown" finished-at="2023-07-12T10:51:49 IST" duration-ms="598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:16 IST" name="setUp" finished-at="2023-07-11T11:02:18 IST" duration-ms="2264" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:49 IST" name="setUp" finished-at="2023-07-12T10:51:55 IST" duration-ms="6000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -377,7 +377,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:18 IST" name="LOS_TC_Login_008" finished-at="2023-07-11T11:02:19 IST" duration-ms="736" status="FAIL">
+        <test-method signature="LOS_TC_Login_008()[pri:3, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:51:55 IST" name="LOS_TC_Login_008" finished-at="2023-07-12T10:51:59 IST" duration-ms="4168" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -421,7 +421,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_008 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@443118b0]" started-at="2023-07-11T11:02:20 IST" name="tearDown" finished-at="2023-07-11T11:02:21 IST" duration-ms="671" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@33d512c1]" started-at="2023-07-12T10:52:02 IST" name="tearDown" finished-at="2023-07-12T10:52:03 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
