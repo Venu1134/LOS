@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.trisysLOS.baseClass.BaseClass;
+import com.trisysLOS.jiraIntegration.JiraCreateIssue;
 import com.trisysLOS.pageObjects.AddSchemePage;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.DashboardPage;
@@ -39,6 +40,7 @@ public class AddSchemePageTest extends BaseClass {
 		driver.quit();
 	}
 	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test
 	public void LOS_TC_AddScheme_001() {
 		addSchemePage.enterSchemeName(testDataProp.getProperty("SchemeName"));
@@ -48,6 +50,7 @@ public class AddSchemePageTest extends BaseClass {
 		Assert.assertTrue(schemesListingPage.validateAddSchemeConfirmatonMessage());
 	}
 	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test
 	public void LOS_TC_AddScheme_002() {
 		addSchemePage.enterSchemeName(testDataProp.getProperty("SchemeName"));
@@ -57,6 +60,7 @@ public class AddSchemePageTest extends BaseClass {
 		Assert.assertTrue(schemesListingPage.getSchemesPageURL(testDataProp.getProperty("SchemesListing")));
 	}
 	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test
 	public void LOS_TC_AddScheme003() {
 		schemesListingPage = addSchemePage.clickOnSaveButton();
