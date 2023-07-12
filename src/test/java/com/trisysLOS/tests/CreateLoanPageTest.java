@@ -9,6 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.trisysLOS.baseClass.BaseClass;
+import com.trisysLOS.jiraIntegration.JiraCreateIssue;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.CreateLoanPage;
 import com.trisysLOS.pageObjects.DashboardPage;
@@ -43,7 +44,7 @@ public class CreateLoanPageTest extends BaseClass {
 		driver.quit();
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
 	public void LOS_TC_CreateLoan_002() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -58,7 +59,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"}, priority=3)
 	public void LOS_TC_CreateLoan_003() {
 		createLoan.enterName(null);
@@ -73,7 +74,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.nameFieldRequired());
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Sanity","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_004() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -92,49 +93,49 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Sanity","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_005() {
 		createLoan.clickOnCreateLoanWithOutDetails();
 		Assert.assertTrue(createLoan.nameFieldRequired());
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_Tc_CreateLoan_006() {
 		createLoan.selectProduct(testDataProp.getProperty("Product"));
 		Assert.assertTrue(createLoan.getProductName(testDataProp.getProperty("Product"))); 
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_007() {
 		createLoan.selectIndividual(testDataProp.getProperty("Individual"));
 		Assert.assertTrue(createLoan.getIndividualText(testDataProp.getProperty("Individual")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"}, priority=1)
 	public void LOS_TC_CreateLoan_008() {
 		createLoan.selectPriority(testDataProp.getProperty("Priority"));
 		Assert.assertTrue(createLoan.getPriorityText(testDataProp.getProperty("Priority")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_009() {
 		createLoan.selectOwner(testDataProp.getProperty("Owner"));
 		Assert.assertTrue(createLoan.getOwnerName(testDataProp.getProperty("Owner")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_010() {
 		createLoan.selectBranch(testDataProp.getProperty("Branch"));
 		Assert.assertTrue(createLoan.getBranchName(testDataProp.getProperty("Branch")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_012() {
 		createLoan.enterDate(testDataProp.getProperty("Date"));
@@ -146,7 +147,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getNeedByDate(testDataProp.getProperty("Date"))); 
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_015() {
 		createLoan.enterDate(testDataProp.getProperty("PastDate"));
@@ -154,7 +155,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validdateDateErrorMessage(testDataProp.getProperty("PastDateActualErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3) 
 	public void LOS_TC_CreateLoan_016() {
 		createLoan.enterName(testDataProp.getProperty("NameAlphaSpace"));
@@ -168,7 +169,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getName(testDataProp.getProperty("NameAlphaSpace")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_017() {
 		createLoan.enterName(testDataProp.getProperty("NameNumbers"));
@@ -176,7 +177,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_018() {
 		createLoan.enterName(testDataProp.getProperty("SpecialCharacters"));
@@ -184,7 +185,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_019() {
 		createLoan.enterName(testDataProp.getProperty("NameNumberSpecialCharacters"));
@@ -192,7 +193,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_020() {
 		createLoan.enterName(testDataProp.getProperty("NameAlphaNumberSpecialCharacters"));
@@ -200,7 +201,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=3)
 	public void LOS_TC_CreateLoan_021() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -213,7 +214,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("Name")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_022() {
 		createLoan.enterName(testDataProp.getProperty("NameSpaces"));
@@ -221,7 +222,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateNameErrorMessage(testDataProp.getProperty("NameErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_023() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -230,7 +231,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getMobileNumber(testDataProp.getProperty("MobileNumber")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_024() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -239,7 +240,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateMobileNumberErrorMessage(testDataProp.getProperty("NineDigitMobileNumberErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=2) 
 	public void LOS_TC_CreateLoan_025() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -248,7 +249,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getMobileNumber(testDataProp.getProperty("TwelveDigitMobileNumber")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_026() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -257,7 +258,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateMobileNumberErrorMessageWithText(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_027() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -266,7 +267,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateMobileNumberErrorMessageWithText(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_028() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -275,7 +276,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateMobileNumberErrorMessageWithText(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_29() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -291,7 +292,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateMobileNumberErrorMessageWithText(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_030() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -301,7 +302,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateEmailErrorMessage(testDataProp.getProperty("EmailIDErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_031() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -311,7 +312,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getEmailId(testDataProp.getProperty("Email")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=3)
 	public void LOS_TC_CreateLoan_036() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -324,7 +325,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getAmount(testDataProp.getProperty("Amount")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_037() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -337,7 +338,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateAmountField(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_038() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -350,7 +351,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateAmountField(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=3)
 	public void LOS_TC_CreateLoan_039() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -363,7 +364,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateAmountField(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_040() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -376,7 +377,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateAmountField(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_041() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -389,7 +390,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.validateAmountField(testDataProp.getProperty("MobileNumberTextErrorMessage")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_042() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -402,7 +403,7 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(createLoan.getAmount(testDataProp.getProperty("ZeroAmount")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Negative"},priority=2)
 	public void LOS_TC_CreateLoan_046() {
 		createLoan.enterName(testDataProp.getProperty("Name"));
@@ -417,14 +418,14 @@ public class CreateLoanPageTest extends BaseClass {
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"},priority=1)
 	public void LOS_TC_CreateLoan_47() {
 		loansListingPage = createLoan.clickOnCancelButton();
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Positive"}, dataProvider = "LoanCreationData",priority=1)
 	public void LOS_TC_CreationLoan_48(String Name, String MobileNumber, String Email, String Product,
 			String Individual, String IndividualType, String Amount, String NeedByDate,

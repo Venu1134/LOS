@@ -37,7 +37,7 @@ public class AdminLoginPageTest extends BaseClass {
 		driver.quit();
 	}
 	
-	
+	@JiraCreateIssue(isCreateIssue=true)
 	@Test(groups= {"Regression","Sanity","Positive"}, priority=1)
 	public void LOS_TC_Login_001() {
 		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
