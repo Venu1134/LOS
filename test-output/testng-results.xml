@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -60,6 +61,37 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+=======
+<testng-results ignored="5" total="6" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-12T14:41:36 IST" name="Default suite" finished-at="2023-07-12T14:41:36 IST" duration-ms="96">
+    <groups>
+      <group name="System">
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" name="LOS_TC_LoansListing_004" class="com.trisysLOS.tests.LoansListingPageTest"/>
+      </group> <!-- System -->
+    </groups>
+    <test started-at="2023-07-12T14:41:36 IST" name="Default test" finished-at="2023-07-12T14:41:36 IST" duration-ms="96">
+      <class name="com.trisysLOS.tests.LoansListingPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1689153096912" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+>>>>>>> 34eec2cdb1024bf01b6fdb7420759ffbdd017296
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -84,11 +116,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_LoansListing_005 -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:45:25 IST" name="tearDown" finished-at="2023-07-12T14:45:25 IST" duration-ms="345" status="PASS">
+=======
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-12T14:41:36 IST" duration-ms="2" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOS_TC_LoansListing_004 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="tearDown" finished-at="2023-07-12T14:41:36 IST" duration-ms="0" status="SKIP">
+>>>>>>> 34eec2cdb1024bf01b6fdb7420759ffbdd017296
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
