@@ -20,7 +20,7 @@ public class LoansDeatilsPage {
 	@FindBy(xpath="//*[contains(@title,'Edit Loan')]//i")
 	private WebElement editButton;
 	
-	@FindBy(xpath="//*[contains(@title,'Delete Loan')]//i")
+	@FindBy(xpath="//a[@onclick='openDeleteModal()']/i")
 	private WebElement deleteButton;
 	
 	public EditLoanPage clickOnEditButton() {

@@ -29,7 +29,7 @@ public class AdminLoginPage {
 	@FindBy(xpath="//*[contains(text(),'Username/Password pair is not correct')]")
 	private WebElement ErrorMessage;
 	
-	@FindBy(xpath= "(//a[@class='dropdown-toggle'])[4]")
+	@FindBy(xpath= "(//a[@class='dropdown-toggle'])[5]")
 	private WebElement logoutdropdown;
 	
 	@FindBy(xpath= "//a[@class='dropdown-item notify-item']")

@@ -48,7 +48,7 @@ public class MyListeners implements ITestListener {
 			e.printStackTrace();
 		}
 		
-		boolean islogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
+		 boolean islogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
 		if(islogIssue){
 			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://venu1134.atlassian.net","venugopal281999@gmail.com","ATATT3xFfGF0z07QHcjkSSYtatR88IozR8ItfOJ7fx9BlJKIKaMdriHwUbzI_FfVhJmHNrcfeJSh1GKLWrd71bBUvPjMqum1TeJWyGFyziTZk4ZD2yV1j2vpIorgjiI0qq8dqcdIX8ZLYA8WWSlJs-KxgGGSbRkpBMbnqYCaXBJDA2Zjq8QXdaM=441E28AD","LOS");
 			

@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [System Testing Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.trisysLOS.utilities.MyListeners"/>
-  </listeners>
-  <test thread-count="5" name="System Testing(failed)">
-    <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="System"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
-          <include name="LOS_TC_LoansListing_006"/>
-          <include name="LOS_TC_LoansListing_005"/>
+          <include name="loantests"/>
+          <include name="tearDown"/>
           <include name="logout"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
     </classes>
-  </test> <!-- System Testing(failed) -->
-</suite> <!-- Failed suite [System Testing Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

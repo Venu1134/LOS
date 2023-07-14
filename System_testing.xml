@@ -13,7 +13,12 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.trisysLOS.tests.LoansListingPageTest" />
+			<class name="com.trisysLOS.tests.LoansListingPageTest">
+			<methods>
+			<include name="loantests"></include>
+			</methods>
+			</class>
+		
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
