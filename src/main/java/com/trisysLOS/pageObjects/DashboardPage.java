@@ -23,6 +23,21 @@ public class DashboardPage {
 	@FindBy(xpath="//*[text()='Schemes']")
 	private WebElement schemesModule;
 	
+	@FindBy(xpath="//*[contains(@class,'pro-user-name')]")
+	private WebElement usernameDropdown;
+	
+	@FindBy(xpath="//*[contains(text(),'Logout')]")
+	private WebElement logoutOption;
+	
+	public AdminLoginPage clickOnLogOutOption() {
+		logoutOption.click();
+		return new AdminLoginPage(driver);
+	}
+	
+	public void clickOnUserNameDropdown() {
+		usernameDropdown.click();
+	}
+	
 	public boolean isDashboardHeadingExists() {
 		return dashboardHeading.isDisplayed();
 	}

@@ -5,9 +5,8 @@
     <classes>
       <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
-          <include name="loantests"/>
+          <include name="CompleteFlow"/>
           <include name="tearDown"/>
-          <include name="logout"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
