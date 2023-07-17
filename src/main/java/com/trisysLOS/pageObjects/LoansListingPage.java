@@ -27,6 +27,14 @@ public class LoansListingPage {
 	@FindBy(xpath="//*[@id='dealTable']//td[1]")
 	private List<WebElement> NameList;
 	
+	@FindBy(xpath="//*[contains(@title,'Trisys CRM')]")
+	private WebElement logo;
+	
+	public DashboardPage clickOnlogo() {
+		logo.click();
+		return new DashboardPage(driver);
+	}
+	
 	public boolean nameValidateInLoansListing(String Name) {
 		boolean actualNameResult = false;
 		for(int i=0; i<NameList.size(); i++) {

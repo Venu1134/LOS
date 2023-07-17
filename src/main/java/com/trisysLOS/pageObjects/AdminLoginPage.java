@@ -29,6 +29,12 @@ public class AdminLoginPage {
 	@FindBy(xpath="//*[contains(text(),'Username/Password pair is not correct')]")
 	private WebElement ErrorMessage;
 	
+	@FindBy(xpath= "(//a[@class='dropdown-toggle'])[5]")
+	private WebElement logoutdropdown;
+	
+	@FindBy(xpath= "//a[@class='dropdown-item notify-item']")
+	private WebElement logoutbutton;
+	
 	public void enterUserName(String UserName) {
 		userName.sendKeys(UserName);
 	}
@@ -63,5 +69,13 @@ public class AdminLoginPage {
 	
 	public boolean validateErrorMessage(String errorMessage) {
 		return ErrorMessage.getText().equals(errorMessage);
+	}
+	
+
+	public AdminLoginPage applicationLogout() {
+		// TODO Auto-generated method stub
+		logoutdropdown.click();
+		logoutbutton.click();
+		return new AdminLoginPage(driver);
 	}
 }

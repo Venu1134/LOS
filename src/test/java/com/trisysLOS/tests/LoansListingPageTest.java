@@ -31,7 +31,7 @@ public class LoansListingPageTest extends BaseClass {
 	public LoanDeletePage loanDeletePage;
 
 	@Parameters("browser")
-	@BeforeMethod(groups = { "System" })
+	@BeforeMethod(groups= {"Regression","Sanity","Negative","Positive"},alwaysRun = true)
 	public void setUp(String browser) {
 		driver = initilizeBrowser(browser);
 		adminLoginPage = new AdminLoginPage(driver);
@@ -39,7 +39,7 @@ public class LoansListingPageTest extends BaseClass {
 				prop.getProperty("Password"));
 	}
 
-	@AfterMethod(groups = { "System" })
+	@AfterMethod(groups= {"Regression","Sanity","Negative","Positive"},alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}
@@ -137,5 +137,26 @@ public class LoansListingPageTest extends BaseClass {
 		Assert.assertFalse(loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("Name")));
 
 	}
-
+	
+	@JiraCreateIssue(isCreateIssue=true)
+	@Test(groups = { "System" })
+    public void CompleteFlow() {
+		loansListingPage = dashboardPage.clickOnLoansLodule();
+		createLoanPage = loansListingPage.clickOnNewLoanButton();
+		loansListingPage = createLoanPage.enterAllDetails(testDataProp.getProperty("Name"),
+				testDataProp.getProperty("MobileNumber"), testDataProp.getProperty("Email"),
+				testDataProp.getProperty("Product"), testDataProp.getProperty("Individual"),
+				testDataProp.getProperty("IndividualType"), testDataProp.getProperty("Amount"),
+				testDataProp.getProperty("Date"), testDataProp.getProperty("Priority"),
+				testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"),
+				testDataProp.getProperty("Branch"));
+		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("Name"));
+		loansDetailsPage = loansListingPage.clickOnCreatedLoan(testDataProp.getProperty("Name"));
+		loanDeletePage = loansDetailsPage.clickOnDeleteButton();
+		loansListingPage = loanDeletePage.clickOnYesButton();
+		dashboardPage = loansListingPage.clickOnlogo();
+		dashboardPage.clickOnUserNameDropdown();
+		adminLoginPage = dashboardPage.clickOnLogOutOption();
+		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
+	}
 }

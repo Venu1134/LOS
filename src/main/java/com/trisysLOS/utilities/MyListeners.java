@@ -48,9 +48,9 @@ public class MyListeners implements ITestListener {
 			e.printStackTrace();
 		}
 		
-		boolean islogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
+		 boolean islogIssue = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(JiraCreateIssue.class).isCreateIssue();
 		if(islogIssue){
-			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://venu1134.atlassian.net","venugopal281999@gmail.com","ATATT3xFfGF0z07QHcjkSSYtatR88IozR8ItfOJ7fx9BlJKIKaMdriHwUbzI_FfVhJmHNrcfeJSh1GKLWrd71bBUvPjMqum1TeJWyGFyziTZk4ZD2yV1j2vpIorgjiI0qq8dqcdIX8ZLYA8WWSlJs-KxgGGSbRkpBMbnqYCaXBJDA2Zjq8QXdaM=441E28AD","LOS");
+			JiraServiceProvider jiraServiceProvider = new JiraServiceProvider("https://venu1134.atlassian.net","venugopal281999@gmail.com","ATATT3xFfGF0pZxVqGRsI_nOQXz4v7f2PxodYbW5kkogKIGTXiGLimWYXLpoihg4X8BJ0Ew-fPCSdCfsl-vzRfKyB_TAKE7wuSP8cJ1ynckeRdRaOjWet0IvU0-zfwtDVZnfcyb4xyswnRKgf3f28gAAj7zIq7ak28dhsorpM8P82IdBJQV542M=46A7DC1A","LOS");
 			
 			String issueDescription = "Failure Reason from Automation Testing\n\n"+ result.getThrowable().getMessage()+"\n";
 			issueDescription.concat(ExceptionUtils.getFullStackTrace(result.getThrowable()));

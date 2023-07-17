@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="7" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T14:44:27 IST" name="Default suite" finished-at="2023-07-12T14:45:26 IST" duration-ms="58656">
+  <suite started-at="2023-07-17T12:36:02 IST" name="System Testing Suite" finished-at="2023-07-17T12:38:25 IST" duration-ms="142671">
     <groups>
       <group name="System">
-        <method signature="LoansListingPageTest.LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" name="LOS_TC_LoansListing_005" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.CompleteFlow()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" name="CompleteFlow" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" name="LOS_TC_LoansListing_004" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" name="LOS_TC_LoansListing_005" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_006()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" name="LOS_TC_LoansListing_006" class="com.trisysLOS.tests.LoansListingPageTest"/>
       </group> <!-- System -->
     </groups>
-    <test started-at="2023-07-12T14:44:27 IST" name="Default test" finished-at="2023-07-12T14:45:26 IST" duration-ms="58656">
+    <test started-at="2023-07-17T12:36:02 IST" name="System Testing" finished-at="2023-07-17T12:38:25 IST" duration-ms="142671">
       <class name="com.trisysLOS.tests.LoansListingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:44:27 IST" name="setUp" finished-at="2023-07-12T14:44:44 IST" duration-ms="17356" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:36:02 IST" name="setUp" finished-at="2023-07-17T12:36:09 IST" duration-ms="6527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:44:44 IST" name="LOS_TC_LoansListing_005" finished-at="2023-07-12T14:45:25 IST" duration-ms="40898" status="FAIL">
+        <test-method signature="CompleteFlow()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:36:09 IST" name="CompleteFlow" finished-at="2023-07-17T12:36:36 IST" duration-ms="26673" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@onclick='openDeleteModal()']/i"}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [74d145360d6a38c6d464cebf10faff7e, findElement {using=id, value=dealName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:5079/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74d145360d6a38c6d464cebf10faff7e]]>
+Command: [55d6f23e33202c3c410ed040cba2afd3, findElement {using=xpath, value=//a[@onclick='openDeleteModal()']/i}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d6f23e33202c3c410ed040cba2afd3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@onclick='openDeleteModal()']/i"}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [74d145360d6a38c6d464cebf10faff7e, findElement {using=id, value=dealName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:5079/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 74d145360d6a38c6d464cebf10faff7e
+Command: [55d6f23e33202c3c410ed040cba2afd3, findElement {using=xpath, value=//a[@onclick='openDeleteModal()']/i}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d6f23e33202c3c410ed040cba2afd3
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -54,44 +63,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getAttribute(Unknown Source)
-at com.trisysLOS.pageObjects.CreateLoanPage.validateNameErrorMessage(CreateLoanPage.java:98)
-at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_005(LoansListingPageTest.java:88)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at com.trisysLOS.pageObjects.LoansDeatilsPage.clickOnDeleteButton(LoansDeatilsPage.java:32)
+at com.trisysLOS.tests.LoansListingPageTest.CompleteFlow(LoansListingPageTest.java:155)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-=======
-<testng-results ignored="5" total="6" passed="0" failed="0" skipped="1">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2023-07-12T14:41:36 IST" name="Default suite" finished-at="2023-07-12T14:41:36 IST" duration-ms="96">
-    <groups>
-      <group name="System">
-        <method signature="LoansListingPageTest.LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" name="LOS_TC_LoansListing_004" class="com.trisysLOS.tests.LoansListingPageTest"/>
-      </group> <!-- System -->
-    </groups>
-    <test started-at="2023-07-12T14:41:36 IST" name="Default test" finished-at="2023-07-12T14:41:36 IST" duration-ms="96">
-      <class name="com.trisysLOS.tests.LoansListingPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1689153096912" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
->>>>>>> 34eec2cdb1024bf01b6fdb7420759ffbdd017296
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -116,35 +94,179 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompleteFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:36:39 IST" name="tearDown" finished-at="2023-07-17T12:36:41 IST" duration-ms="1306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:36:41 IST" name="setUp" finished-at="2023-07-17T12:36:46 IST" duration-ms="5418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:36:46 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-17T12:37:02 IST" duration-ms="15866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LOS_TC_LoansListing_004 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:02 IST" name="tearDown" finished-at="2023-07-17T12:37:03 IST" duration-ms="1123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:03 IST" name="setUp" finished-at="2023-07-17T12:37:08 IST" duration-ms="4966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LOS_TC_LoansListing_005()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:08 IST" name="LOS_TC_LoansListing_005" finished-at="2023-07-17T12:37:47 IST" duration-ms="38820" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1252580bdff8fda951613873746d0177, findElement {using=id, value=dealName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1252580bdff8fda951613873746d0177]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dealName"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1252580bdff8fda951613873746d0177, findElement {using=id, value=dealName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1252580bdff8fda951613873746d0177
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.getAttribute(Unknown Source)
+at com.trisysLOS.pageObjects.CreateLoanPage.validateNameErrorMessage(CreateLoanPage.java:98)
+at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_005(LoansListingPageTest.java:114)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_LoansListing_005 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@72e5a8e]" started-at="2023-07-12T14:45:25 IST" name="tearDown" finished-at="2023-07-12T14:45:25 IST" duration-ms="345" status="PASS">
-=======
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:49 IST" name="tearDown" finished-at="2023-07-17T12:37:50 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:50 IST" name="setUp" finished-at="2023-07-17T12:37:55 IST" duration-ms="4556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_LoansListing_004()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-12T14:41:36 IST" duration-ms="2" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="LOS_TC_LoansListing_006()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:37:55 IST" name="LOS_TC_LoansListing_006" finished-at="2023-07-17T12:38:21 IST" duration-ms="25993" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@onclick='openDeleteModal()']/i"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [810d82493f9944fcc283351381727cca, findElement {using=xpath, value=//a[@onclick='openDeleteModal()']/i}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57223/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 810d82493f9944fcc283351381727cca]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@onclick='openDeleteModal()']/i"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [810d82493f9944fcc283351381727cca, findElement {using=xpath, value=//a[@onclick='openDeleteModal()']/i}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57223/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 810d82493f9944fcc283351381727cca
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at com.trisysLOS.pageObjects.LoansDeatilsPage.clickOnDeleteButton(LoansDeatilsPage.java:32)
+at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_006(LoansListingPageTest.java:134)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -169,16 +291,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LOS_TC_LoansListing_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@59474f18]" started-at="2023-07-12T14:41:36 IST" name="tearDown" finished-at="2023-07-12T14:41:36 IST" duration-ms="0" status="SKIP">
->>>>>>> 34eec2cdb1024bf01b6fdb7420759ffbdd017296
+        </test-method> <!-- LOS_TC_LoansListing_006 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2d3379b4]" started-at="2023-07-17T12:38:23 IST" name="tearDown" finished-at="2023-07-17T12:38:25 IST" duration-ms="1202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- System Testing -->
+  </suite> <!-- System Testing Suite -->
 </testng-results>
