@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-System_Testing_Suite" class="navigator-link ">
-                    <span>C:\Users\Dell\eclipse-workspace\LOS\System_testing.xml</span>
+                    <span>C:\Users\DELL\eclipse-workspace\LOS\System_testing.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-System_Testing_Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,16 +101,6 @@
                       <a href="#" panel-name="suite-System_Testing_Suite" class="show-methods failed suite-System_Testing_Suite"> (show)</a> <!-- show-methods failed suite-System_Testing_Suite -->
                     </span>
                     <div class="method-list-content failed suite-System_Testing_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.LoansListingPageTest" class="method navigator-link" hash-for-method="CompleteFlow">CompleteFlow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.LoansListingPageTest" class="method navigator-link" hash-for-method="LOS_TC_LoansListing_005">LOS_TC_LoansListing_005</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.LoansListingPageTest" class="method navigator-link" hash-for-method="LOS_TC_LoansListing_006">LOS_TC_LoansListing_006</a> <!-- method navigator-link -->
@@ -127,7 +117,17 @@
                     <div class="method-list-content passed suite-System_Testing_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.LoansListingPageTest" class="method navigator-link" hash-for-method="CompleteFlow">CompleteFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.LoansListingPageTest" class="method navigator-link" hash-for-method="LOS_TC_LoansListing_004">LOS_TC_LoansListing_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-System_Testing_Suite" title="com.trisysLOS.tests.AdminLoginPageTest" class="method navigator-link" hash-for-method="LOS_TC_Login_002">LOS_TC_Login_002</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-System_Testing_Suite -->
@@ -150,106 +150,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CompleteFlow">
-                  </a> <!-- CompleteFlow -->
-                  <span class="method-name">CompleteFlow</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@onclick=&apos;openDeleteModal()&apos;]/i&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [55d6f23e33202c3c410ed040cba2afd3, findElement {using=xpath, value=//a[@onclick=&apos;openDeleteModal()&apos;]/i}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57112/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 55d6f23e33202c3c410ed040cba2afd3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.trisysLOS.pageObjects.LoansDeatilsPage.clickOnDeleteButton(LoansDeatilsPage.java:32)
-	at com.trisysLOS.tests.LoansListingPageTest.CompleteFlow(LoansListingPageTest.java:155)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LOS_TC_LoansListing_005">
-                  </a> <!-- LOS_TC_LoansListing_005 -->
-                  <span class="method-name">LOS_TC_LoansListing_005</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#dealName&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1252580bdff8fda951613873746d0177, findElement {using=id, value=dealName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1252580bdff8fda951613873746d0177
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getAttribute(Unknown Source)
-	at com.trisysLOS.pageObjects.CreateLoanPage.validateNameErrorMessage(CreateLoanPage.java:98)
-	at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_005(LoansListingPageTest.java:114)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="LOS_TC_LoansListing_006">
                   </a> <!-- LOS_TC_LoansListing_006 -->
                   <span class="method-name">LOS_TC_LoansListing_006</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@onclick=&apos;openDeleteModal()&apos;]/i&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [810d82493f9944fcc283351381727cca, findElement {using=xpath, value=//a[@onclick=&apos;openDeleteModal()&apos;]/i}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57223/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 810d82493f9944fcc283351381727cca
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.trisysLOS.pageObjects.LoansDeatilsPage.clickOnDeleteButton(LoansDeatilsPage.java:32)
-	at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_006(LoansListingPageTest.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_006(LoansListingPageTest.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -258,9 +165,31 @@ Session ID: 810d82493f9944fcc283351381727cca
           <div class="suite-System_Testing_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.trisysLOS.tests.AdminLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LOS_TC_Login_002">
+                  </a> <!-- LOS_TC_Login_002 -->
+                  <span class="method-name">LOS_TC_Login_002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-System_Testing_Suite-class-passed -->
+          <div class="suite-System_Testing_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.trisysLOS.tests.LoansListingPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompleteFlow">
+                  </a> <!-- CompleteFlow -->
+                  <span class="method-name">CompleteFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="LOS_TC_LoansListing_004">
@@ -273,7 +202,7 @@ Session ID: 810d82493f9944fcc283351381727cca
         </div> <!-- panel System_Testing_Suite -->
         <div panel-name="test-xml-System_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\eclipse-workspace\LOS\System_testing.xml</span>
+            <span class="header-content">C:\Users\DELL\eclipse-workspace\LOS\System_testing.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -292,6 +221,7 @@ Session ID: 810d82493f9944fcc283351381727cca
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.trisysLOS.tests.LoansListingPageTest&quot;/&gt;
+      &lt;class name=&quot;com.trisysLOS.tests.AdminLoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- System Testing --&gt;
 &lt;/suite&gt; &lt;!-- System Testing Suite --&gt;
@@ -305,7 +235,7 @@ Session ID: 810d82493f9944fcc283351381727cca
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">System Testing (1 class)</span>
+                <span class="test-name">System Testing (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,6 +245,30 @@ Session ID: 810d82493f9944fcc283351381727cca
             <span class="header-content">Groups for System Testing Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LOS_TC_Login_002</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LOS_TC_Login_002</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">LOS_TC_Login_002</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">System</span>
               <br/>
@@ -327,11 +281,11 @@ Session ID: 810d82493f9944fcc283351381727cca
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">LOS_TC_LoansListing_005</span>
+                <span class="method-in-group-name">LOS_TC_LoansListing_006</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">LOS_TC_LoansListing_006</span>
+                <span class="method-in-group-name">LOS_TC_Login_002</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -353,26 +307,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LOS_TC_LoansListing_005')
+data.setCell(0, 1, 'CompleteFlow')
 data.setCell(0, 2, 'com.trisysLOS.tests.LoansListingPageTest')
-data.setCell(0, 3, 38820);
+data.setCell(0, 3, 16797);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CompleteFlow')
+data.setCell(1, 1, 'LOS_TC_LoansListing_006')
 data.setCell(1, 2, 'com.trisysLOS.tests.LoansListingPageTest')
-data.setCell(1, 3, 26673);
+data.setCell(1, 3, 14450);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LOS_TC_LoansListing_006')
+data.setCell(2, 1, 'LOS_TC_LoansListing_004')
 data.setCell(2, 2, 'com.trisysLOS.tests.LoansListingPageTest')
-data.setCell(2, 3, 25993);
+data.setCell(2, 3, 13181);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LOS_TC_LoansListing_004')
-data.setCell(3, 2, 'com.trisysLOS.tests.LoansListingPageTest')
-data.setCell(3, 3, 15866);
+data.setCell(3, 1, 'LOS_TC_Login_002')
+data.setCell(3, 2, 'com.trisysLOS.tests.AdminLoginPageTest')
+data.setCell(3, 3, 1212);
 window.suiteTableData['System_Testing_Suite']= { tableData: data, tableDiv: 'times-div-System_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-System_Testing_Suite">
               </div> <!-- times-div-System_Testing_Suite -->
             </div> <!-- times-div -->
@@ -387,17 +341,38 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-System_Testing_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.trisysLOS.tests.AdminLoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LOS_TC_Login_006</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_005</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_001</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_008</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_007</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_004</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_Login_003</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.trisysLOS.tests.LoansListingPageTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">LOS_TC_LoansListing_005</span>
+                <br/>
+                <span class="ignored-method-name">LOS_TC_LoansListing_002</span>
+                <br/>
                 <span class="ignored-method-name">LOS_TC_LoansListing_003</span>
                 <br/>
                 <span class="ignored-method-name">LOS_TC_LoansListing_001</span>
-                <br/>
-                <span class="ignored-method-name">LOS_TC_LoansListing_002</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -415,54 +390,53 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">CompleteFlow</span>
-                <span class="method-start">6532 ms</span>
+                <span class="method-start">5593 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36902 ms</span>
+                <span class="method-start">22399 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">38217 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LOS_TC_LoansListing_004</span>
-                <span class="method-start">43635 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">59502 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">60626 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LOS_TC_LoansListing_005</span>
-                <span class="method-start">65592 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">106900 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">107987 ms</span>
+                <span class="method-start">22919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LOS_TC_LoansListing_006</span>
-                <span class="method-start">112543 ms</span>
+                <span class="method-start">26380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">141082 ms</span>
+                <span class="method-start">44396 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">44660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LOS_TC_LoansListing_004</span>
+                <span class="method-start">47894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">61076 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.trisysLOS.tests.AdminLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">61267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LOS_TC_Login_002</span>
+                <span class="method-start">63606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64819 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

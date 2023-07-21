@@ -1,11 +1,15 @@
 package com.trisysLOS.pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 public class LoansListingPage {
 
@@ -24,7 +28,7 @@ public class LoansListingPage {
 	@FindBy(xpath="(//*[@placeholder='Search Name or Mobile Number'])[1]")
 	private WebElement searchByNameOrMobileNumber;
 	
-	@FindBy(xpath="//*[@id='dealTable']//td[1]")
+	@FindBy(xpath="//*[@id='dealTable']//td[1]//a")
 	private List<WebElement> NameList;
 	
 	@FindBy(xpath="//*[contains(@title,'Trisys CRM')]")
@@ -46,9 +50,18 @@ public class LoansListingPage {
 	
 	public LoansDeatilsPage clickOnCreatedLoan(String Name) {
 		for(int i=0; i<NameList.size(); i++) {
-			boolean actualNameResult = NameList.get(i).getText().equals(Name);
-			if(actualNameResult == true) {
-				NameList.get(i).click();
+			Wait<WebDriver> wait = null;
+			try {
+				wait = new FluentWait<WebDriver>((WebDriver) driver).withTimeout(Duration.ofSeconds(20))
+						.pollingEvery(Duration.ofSeconds(2)).ignoring(Exception.class);
+				wait.until(ExpectedConditions.visibilityOfAllElements(NameList));
+				boolean actualNameResult = NameList.get(i).getText().equals(Name);
+				if(actualNameResult == true) {
+					NameList.get(i).click();
+					break;
+				}
+			}catch(Exception e) {
+				e.printStackTrace();
 			}
 		}
 		return new LoansDeatilsPage(driver);

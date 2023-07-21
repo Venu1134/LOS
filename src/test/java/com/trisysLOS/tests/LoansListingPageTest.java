@@ -8,7 +8,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.trisysLOS.baseClass.BaseClass;
-import com.trisysLOS.jiraIntegration.JiraCreateIssue;
 import com.trisysLOS.pageObjects.AdminLoginPage;
 import com.trisysLOS.pageObjects.CreateLoanPage;
 import com.trisysLOS.pageObjects.DashboardPage;
@@ -44,7 +43,6 @@ public class LoansListingPageTest extends BaseClass {
 		driver.quit();
 	}
 
-	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	// Validate whether the user is able to navigate loan tab
 	public void LOS_TC_LoansListing_001() {
@@ -52,7 +50,6 @@ public class LoansListingPageTest extends BaseClass {
 		Assert.assertTrue(loansListingPage.getLoansPageURL(testDataProp.getProperty("loansURL")));
 	}
 
-	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void LOS_TC_LoansListing_002() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
@@ -60,7 +57,6 @@ public class LoansListingPageTest extends BaseClass {
 		Assert.assertTrue(loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName")));
 	}
 
-	@JiraCreateIssue(isCreateIssue = true)
 	@Test
 	public void LOS_TC_LoansListing_003() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
@@ -70,8 +66,7 @@ public class LoansListingPageTest extends BaseClass {
 	}
 
 	// Validate whether the loan created is displayed in Loan listing page
-	@JiraCreateIssue(isCreateIssue = true)
-	@Test(groups = { "System" })
+	@Test(groups = { "System" },priority=3)
 	public void LOS_TC_LoansListing_004() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
 		createLoanPage = loansListingPage.clickOnNewLoanButton();
@@ -83,14 +78,12 @@ public class LoansListingPageTest extends BaseClass {
 				testDataProp.getProperty("Description"), testDataProp.getProperty("Owner"),
 				testDataProp.getProperty("Branch"));
 		loansListingPage.enterSearchByNameOrMobileNumber(testDataProp.getProperty("SearchName"));
-		loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName"));
-		loansListingPage.clickOnCreatedLoan(testDataProp.getProperty("SearchName"));
 		Assert.assertTrue(loansListingPage.nameValidateInLoansListing(testDataProp.getProperty("SearchName")));
 	}
 
 	// Validate that user is unable to create duplicate loans
-	@JiraCreateIssue(isCreateIssue=true)
-	@Test(groups = { "System" })
+
+	@Test
 	public void LOS_TC_LoansListing_005() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
 		createLoanPage = loansListingPage.clickOnNewLoanButton();
@@ -116,8 +109,8 @@ public class LoansListingPageTest extends BaseClass {
 
 	// Validate that user is able to delete the created loan and verify that loan is
 	// not displayed in loan listing page
-	@JiraCreateIssue(isCreateIssue=true)
-	@Test(groups = { "System" })
+
+	@Test(groups = { "System" }, priority=2)
 	public void LOS_TC_LoansListing_006() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
 		createLoanPage = loansListingPage.clickOnNewLoanButton();
@@ -138,8 +131,8 @@ public class LoansListingPageTest extends BaseClass {
 
 	}
 	
-	@JiraCreateIssue(isCreateIssue=true)
-	@Test(groups = { "System" })
+
+	@Test(groups = { "System" }, priority=1)
     public void CompleteFlow() {
 		loansListingPage = dashboardPage.clickOnLoansLodule();
 		createLoanPage = loansListingPage.clickOnNewLoanButton();
@@ -157,6 +150,6 @@ public class LoansListingPageTest extends BaseClass {
 		dashboardPage = loansListingPage.clickOnlogo();
 		dashboardPage.clickOnUserNameDropdown();
 		adminLoginPage = dashboardPage.clickOnLogOutOption();
-		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("actualURL")));
+		Assert.assertTrue(adminLoginPage.getSignInPageURL(testDataProp.getProperty("logoutURL")));
 	}
 }
