@@ -13,8 +13,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentReporter {
 
 	public static ExtentReports generateExtentReporter() {
+		String timeStamp = new SimpleDateFormat("yyyyy.MM.dd.HH.mm.ss").format(new Date());
 		ExtentReports extentReports = new ExtentReports();
-		File extentReportFile = new File(System.getProperty("user.dir")+"\\reports\\trisysLOSTestReport.html");
+		File extentReportFile = new File(System.getProperty("user.dir")+"\\reports\\trisysLOSTestReport-"+timeStamp+".html");
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
 		
 		sparkReporter.config().setTheme(Theme.DARK);

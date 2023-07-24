@@ -86,13 +86,13 @@ public class MyListeners implements ITestListener {
 	public void onFinish(ITestContext context) {
 		extentReport.flush();
 
-		String extentReportPath = System.getProperty("user.dir") + "\\reports\\trisysLOSTestReport.html";
-		File extentReportURI = new File(extentReportPath);
-		try {
-			Desktop.getDesktop().browse(extentReportURI.toURI());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		String extentReportPath = System.getProperty("user.dir") + "\\reports\\trisysLOSTestReport-"+timeStamp+".html";
+//		File extentReportURI = new File(extentReportPath);
+//		try {
+//			Desktop.getDesktop().browse(extentReportURI.toURI());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 }
