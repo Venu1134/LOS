@@ -1,5 +1,7 @@
 package com.trisysLOS.tests;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -29,7 +31,7 @@ public class CreateLoanPageTest extends BaseClass {
 
 	@Parameters("browser")
 	@BeforeMethod(groups= {"Regression","Sanity","Negative","Positive"},alwaysRun = true)
-	public void setUp(String browser) {
+	public void setUp(String browser) throws MalformedURLException {
 		driver = initilizeBrowser(browser);
 		adminLoginPage = new AdminLoginPage(driver);
 		dashboardPage = adminLoginPage.EnterValidLoginCredentials(prop.getProperty("UserName"),

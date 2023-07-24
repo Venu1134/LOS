@@ -1,5 +1,7 @@
 package com.trisysLOS.tests;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -27,7 +29,7 @@ public class LoanDeletePageTest extends BaseClass{
 	public LoanDeletePage loanDeletePage;
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws MalformedURLException {
 		driver = initilizeBrowser(prop.getProperty("BrowserName"));
 		adminLoginPage = new AdminLoginPage(driver);
 		dashboardPage = adminLoginPage.EnterValidLoginCredentials(prop.getProperty("UserName"), prop.getProperty("Password"));

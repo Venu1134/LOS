@@ -15,10 +15,19 @@
       <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
           <include name="LOS_TC_LoansListing_006"/>
+          <include name="CompleteFlow"/>
           <include name="tearDown"/>
+          <include name="LOS_TC_LoansListing_004"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
+      <class name="com.trisysLOS.tests.AdminLoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="LOS_TC_Login_002"/>
+        </methods>
+      </class> <!-- com.trisysLOS.tests.AdminLoginPageTest -->
     </classes>
   </test> <!-- System Testing(failed) -->
 </suite> <!-- Failed suite [System Testing Suite] -->

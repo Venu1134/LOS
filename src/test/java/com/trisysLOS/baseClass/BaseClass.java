@@ -2,6 +2,8 @@ package com.trisysLOS.baseClass;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -9,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.trisysLOS.utilities.UtilityClass;
@@ -19,6 +23,7 @@ public class BaseClass {
 	WebDriver driver;
 	public Properties prop;
 	public Properties testDataProp;
+	public DesiredCapabilities desc;
 	
 	public BaseClass() {
 		prop = new Properties();
@@ -40,15 +45,27 @@ public class BaseClass {
 		}
 	}
 	
-	public WebDriver initilizeBrowser(String browserName) {
+	public WebDriver initilizeBrowser(String browserName) throws MalformedURLException {
 		if(browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			desc = new DesiredCapabilities();
+			desc.setBrowserName(browserName);
+			driver= new RemoteWebDriver(new URL("http://10.10.1.47:4444/wd/hub"), desc);
+			//driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+			desc = new DesiredCapabilities();
+			desc.setBrowserName(browserName);
+			driver= new RemoteWebDriver(new URL("http://10.10.1.47:4444/wd/hub"), desc);
+			//driver = new FirefoxDriver();
 		}else if(browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			desc = new DesiredCapabilities();
+			desc.setBrowserName(browserName);
+			driver= new RemoteWebDriver(new URL("http://10.10.1.47:4444/wd/hub"), desc);
+			//driver = new EdgeDriver();
 		}else if(browserName.equalsIgnoreCase("safari")) {
-			driver = new SafariDriver();
+			desc = new DesiredCapabilities();
+			desc.setBrowserName(browserName);
+			driver= new RemoteWebDriver(new URL("http://10.10.1.47:4444/wd/hub"), desc);
+			//driver = new SafariDriver();
 		}
 		
 		driver.manage().window().maximize();

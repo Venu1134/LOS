@@ -1,5 +1,7 @@
 package com.trisysLOS.tests;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -24,7 +26,7 @@ public class AdminLoginPageTest extends BaseClass {
 	
 	@Parameters("browser")
 	@BeforeMethod(groups= {"Regression","Sanity","Negative","Positive","System"}, alwaysRun = true)
-	public void setUp(String browser) {
+	public void setUp(String browser) throws MalformedURLException {
 		driver = initilizeBrowser(browser);
 		System.out.println(driver + "driver");
 		adminLoginPage = new AdminLoginPage(driver);
