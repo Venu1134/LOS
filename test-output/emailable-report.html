@@ -9,13 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">System Testing Suite</th></tr>
-<tr><td><a href="#t0">System Testing</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">59,330</td><td>System</td><td></td></tr>
+<tr><td><a href="#t0">System Testing</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">114,765</td><td>System</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">System Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">System Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.trisysLOS.tests.AdminLoginPageTest</td><td><a href="#m0">LOS_TC_Login_002</a></td><td rowspan="1">1690198988869</td><td rowspan="1">1081</td></tr><tr class="passedodd"><td rowspan="3">com.trisysLOS.tests.LoansListingPageTest</td><td><a href="#m1">CompleteFlow</a></td><td rowspan="1">1690198936855</td><td rowspan="1">15665</td></tr><tr class="passedodd"><td><a href="#m2">LOS_TC_LoansListing_004</a></td><td rowspan="1">1690198973421</td><td rowspan="1">12945</td></tr><tr class="passedodd"><td><a href="#m3">LOS_TC_LoansListing_006</a></td><td rowspan="1">1690198956077</td><td rowspan="1">14084</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">System Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">System Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.trisysLOS.tests.AdminLoginPageTest</td><td><a href="#m0">LOS_TC_Login_002</a></td><td rowspan="1">1690221046887</td><td rowspan="1">20325</td></tr><tr class="failedodd"><td rowspan="1">com.trisysLOS.tests.LoansListingPageTest</td><td><a href="#m1">LOS_TC_LoansListing_004</a></td><td rowspan="1">1690221006615</td><td rowspan="1">33681</td></tr><tr><th colspan="4">System Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.trisysLOS.tests.LoansListingPageTest</td><td><a href="#m2">CompleteFlow</a></td><td rowspan="1">1690220965415</td><td rowspan="1">17878</td></tr><tr class="passedeven"><td><a href="#m3">LOS_TC_LoansListing_006</a></td><td rowspan="1">1690220987692</td><td rowspan="1">14914</td></tr></tbody>
 </table>
-<h2>System Testing</h2><h3 id="m0">com.trisysLOS.tests.AdminLoginPageTest#LOS_TC_Login_002</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.trisysLOS.tests.LoansListingPageTest#CompleteFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.trisysLOS.tests.LoansListingPageTest#LOS_TC_LoansListing_004</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>System Testing</h2><h3 id="m0">com.trisysLOS.tests.AdminLoginPageTest#LOS_TC_Login_002</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33c5e6da7f33426faff8729095e21c3e, clickElement {id=6925E177D7FF0AA3827043A48CCA686F_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52639/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33c5e6da7f33426faff8729095e21c3e)] -&gt; xpath: //*[text()=&apos;Sign In&apos;]]
+Session ID: 33c5e6da7f33426faff8729095e21c3e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.trisysLOS.pageObjects.AdminLoginPage.EnterValidLoginCredentials(AdminLoginPage.java:61)
+	at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002(AdminLoginPageTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.trisysLOS.tests.LoansListingPageTest#LOS_TC_LoansListing_004</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d780b39fd45f01229804ce5f3356d2, clickElement {id=B39E89BFB55B134558EC4949DA83F4A2_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52594/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29d780b39fd45f01229804ce5f3356d2)] -&gt; xpath: //*[@title=&apos;Add&apos;]]
+Session ID: 29d780b39fd45f01229804ce5f3356d2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.trisysLOS.pageObjects.CreateLoanPage.clickOnCreateLoanButton(CreateLoanPage.java:301)
+	at com.trisysLOS.pageObjects.CreateLoanPage.enterAllDetails(CreateLoanPage.java:340)
+	at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_004(LoansListingPageTest.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.trisysLOS.tests.LoansListingPageTest#CompleteFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.trisysLOS.tests.LoansListingPageTest#LOS_TC_LoansListing_006</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

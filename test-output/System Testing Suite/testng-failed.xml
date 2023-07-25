@@ -14,8 +14,6 @@
     <classes>
       <class name="com.trisysLOS.tests.LoansListingPageTest">
         <methods>
-          <include name="LOS_TC_LoansListing_006"/>
-          <include name="CompleteFlow"/>
           <include name="tearDown"/>
           <include name="LOS_TC_LoansListing_004"/>
           <include name="setUp"/>

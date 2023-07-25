@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="15" passed="4" failed="0" skipped="0">
+<testng-results ignored="11" total="15" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-24T17:12:10 IST" name="System Testing Suite" finished-at="2023-07-24T17:13:10 IST" duration-ms="59330">
+  <suite started-at="2023-07-24T23:19:17 IST" name="System Testing Suite" finished-at="2023-07-24T23:21:12 IST" duration-ms="114765">
     <groups>
       <group name="Sanity">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Sanity -->
       <group name="Positive">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Positive -->
       <group name="Regression">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
       </group> <!-- Regression -->
       <group name="System">
-        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
-        <method signature="LoansListingPageTest.CompleteFlow()[pri:1, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" name="CompleteFlow" class="com.trisysLOS.tests.LoansListingPageTest"/>
-        <method signature="LoansListingPageTest.LOS_TC_LoansListing_006()[pri:2, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" name="LOS_TC_LoansListing_006" class="com.trisysLOS.tests.LoansListingPageTest"/>
-        <method signature="LoansListingPageTest.LOS_TC_LoansListing_004()[pri:3, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" name="LOS_TC_LoansListing_004" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="AdminLoginPageTest.LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" name="LOS_TC_Login_002" class="com.trisysLOS.tests.AdminLoginPageTest"/>
+        <method signature="LoansListingPageTest.CompleteFlow()[pri:1, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" name="CompleteFlow" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_006()[pri:2, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" name="LOS_TC_LoansListing_006" class="com.trisysLOS.tests.LoansListingPageTest"/>
+        <method signature="LoansListingPageTest.LOS_TC_LoansListing_004()[pri:3, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" name="LOS_TC_LoansListing_004" class="com.trisysLOS.tests.LoansListingPageTest"/>
       </group> <!-- System -->
     </groups>
-    <test started-at="2023-07-24T17:12:10 IST" name="System Testing" finished-at="2023-07-24T17:13:10 IST" duration-ms="59330">
+    <test started-at="2023-07-24T23:19:17 IST" name="System Testing" finished-at="2023-07-24T23:21:12 IST" duration-ms="114765">
       <class name="com.trisysLOS.tests.LoansListingPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:11 IST" name="setUp" finished-at="2023-07-24T17:12:16 IST" duration-ms="5571" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:19:18 IST" name="setUp" finished-at="2023-07-24T23:19:25 IST" duration-ms="7361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CompleteFlow()[pri:1, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:16 IST" name="CompleteFlow" finished-at="2023-07-24T17:12:32 IST" duration-ms="15665" status="PASS">
+        <test-method signature="CompleteFlow()[pri:1, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:19:25 IST" name="CompleteFlow" finished-at="2023-07-24T23:19:43 IST" duration-ms="17878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CompleteFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:32 IST" name="tearDown" finished-at="2023-07-24T17:12:32 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:19:43 IST" name="tearDown" finished-at="2023-07-24T23:19:43 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:32 IST" name="setUp" finished-at="2023-07-24T17:12:36 IST" duration-ms="3251" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:19:43 IST" name="setUp" finished-at="2023-07-24T23:19:47 IST" duration-ms="4061" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,15 +52,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_LoansListing_006()[pri:2, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:36 IST" name="LOS_TC_LoansListing_006" finished-at="2023-07-24T17:12:50 IST" duration-ms="14084" status="PASS">
+        <test-method signature="LOS_TC_LoansListing_006()[pri:2, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:19:47 IST" name="LOS_TC_LoansListing_006" finished-at="2023-07-24T23:20:02 IST" duration-ms="14914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_LoansListing_006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:50 IST" name="tearDown" finished-at="2023-07-24T17:12:50 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:20:02 IST" name="tearDown" finished-at="2023-07-24T23:20:02 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:50 IST" name="setUp" finished-at="2023-07-24T17:12:53 IST" duration-ms="3047" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:20:02 IST" name="setUp" finished-at="2023-07-24T23:20:06 IST" duration-ms="3691" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,17 +71,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_LoansListing_004()[pri:3, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:12:53 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-24T17:13:06 IST" duration-ms="12945" status="PASS">
+        <test-method signature="LOS_TC_LoansListing_004()[pri:3, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:20:06 IST" name="LOS_TC_LoansListing_004" finished-at="2023-07-24T23:20:40 IST" duration-ms="33681" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d780b39fd45f01229804ce5f3356d2, clickElement {id=B39E89BFB55B134558EC4949DA83F4A2_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52594/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29d780b39fd45f01229804ce5f3356d2)] -> xpath: //*[@title='Add']]
+Session ID: 29d780b39fd45f01229804ce5f3356d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29d780b39fd45f01229804ce5f3356d2, clickElement {id=B39E89BFB55B134558EC4949DA83F4A2_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52594/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29d780b39fd45f01229804ce5f3356d2)] -> xpath: //*[@title='Add']]
+Session ID: 29d780b39fd45f01229804ce5f3356d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at com.trisysLOS.pageObjects.CreateLoanPage.clickOnCreateLoanButton(CreateLoanPage.java:301)
+at com.trisysLOS.pageObjects.CreateLoanPage.enterAllDetails(CreateLoanPage.java:340)
+at com.trisysLOS.tests.LoansListingPageTest.LOS_TC_LoansListing_004(LoansListingPageTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_LoansListing_004 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@2767e23c]" started-at="2023-07-24T17:13:06 IST" name="tearDown" finished-at="2023-07-24T17:13:06 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.LoansListingPageTest@7e057f43]" started-at="2023-07-24T23:20:42 IST" name="tearDown" finished-at="2023-07-24T23:20:43 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.trisysLOS.tests.LoansListingPageTest -->
       <class name="com.trisysLOS.tests.AdminLoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" started-at="2023-07-24T17:13:06 IST" name="setUp" finished-at="2023-07-24T17:13:08 IST" duration-ms="2261" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" started-at="2023-07-24T23:20:43 IST" name="setUp" finished-at="2023-07-24T23:20:46 IST" duration-ms="3633" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,11 +166,84 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" started-at="2023-07-24T17:13:08 IST" name="LOS_TC_Login_002" finished-at="2023-07-24T17:13:09 IST" duration-ms="1081" status="PASS">
+        <test-method signature="LOS_TC_Login_002()[pri:1, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" started-at="2023-07-24T23:20:46 IST" name="LOS_TC_Login_002" finished-at="2023-07-24T23:21:07 IST" duration-ms="20325" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33c5e6da7f33426faff8729095e21c3e, clickElement {id=6925E177D7FF0AA3827043A48CCA686F_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52639/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33c5e6da7f33426faff8729095e21c3e)] -> xpath: //*[text()='Sign In']]
+Session ID: 33c5e6da7f33426faff8729095e21c3e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33c5e6da7f33426faff8729095e21c3e, clickElement {id=6925E177D7FF0AA3827043A48CCA686F_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52639/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33c5e6da7f33426faff8729095e21c3e)] -> xpath: //*[text()='Sign In']]
+Session ID: 33c5e6da7f33426faff8729095e21c3e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at com.trisysLOS.pageObjects.AdminLoginPage.EnterValidLoginCredentials(AdminLoginPage.java:61)
+at com.trisysLOS.tests.AdminLoginPageTest.LOS_TC_Login_002(AdminLoginPageTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LOS_TC_Login_002 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@6f10d5b6]" started-at="2023-07-24T17:13:09 IST" name="tearDown" finished-at="2023-07-24T17:13:10 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trisysLOS.tests.AdminLoginPageTest@45d84a20]" started-at="2023-07-24T23:21:12 IST" name="tearDown" finished-at="2023-07-24T23:21:12 IST" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
